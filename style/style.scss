@@ -58,7 +58,7 @@ $font-family-text: 'Roboto', sans-serif;
    flex-direction: column;
    text-align: center;
    background-color: $bg-explore;
-   padding-bottom: 17%;
+   padding-bottom: 13%;
    h2{
     display: flex;
     justify-content: center;
@@ -100,13 +100,24 @@ margin-top: 4%;
 $bg-functionning:#f8f3ff;
 $bg-choice:#f8f8f8;
 $bshadow:rgb(125, 124, 124, 0.1);
+
+@mixin link{
+  color: black;
+  text-decoration: none;
+  font-family:$font-family-text ;
+}
+@mixin hometitle{
+  font-size: 25px;
+  margin-top: 10%;
+  margin-left: 5%;
+  font-family: $font-family-text;
+
+}
 .functioning{
   font-family: $font-family-text;
 
   h1{
-    font-size: 25px;
-    margin-top: 10%;
-    margin-left: 5%;
+  @include hometitle;
   }   
 .choice{
   box-shadow: 4px 5px $bshadow;
@@ -148,9 +159,69 @@ color: black;
 font-weight: bold;
 }
 a{
-  text-decoration: none;
+  @include link;
 }
 }
 }
 
+
+/*partie restaurants*/
+@mixin ticket{
+   background-color: $color-tertiary;
+  color: #0b8768;
+   padding: 2%;
+  font-size: small;
+  float: right;
+  margin-left: 60%;
+  font-weight: bold;
+  position: absolute;
+  font-family: $font-family-text;
+}
+.restaurants{
+    h1{
+    @include hometitle;
+  }
+
+ 
+  .card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    border-radius: 20px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    .ticket{
+    @include ticket;
+    }
+    img {
+      display: flex;
+      object-fit: contain;
+      width: 100%;
+      border-radius: 20px 20px 0px 0px;
+    }
+  }
+  .container{
+    font-family: $font-family-text;
+    float: left;
+    text-align: justify;
+    line-height: 5px;
+  margin-left: -45%;
+  font-size: 14px;
+  h3{
+    font-weight: bold;
+
+  }
+     a{
+      @include link;
+ 
+   }
+.heart{
+  text-align:right ;
+  font-size: 23px;
+}
+  }
+
+}
 
