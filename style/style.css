@@ -82,13 +82,24 @@ header img {
   box-shadow: 3px 3px 3px 3px rgba(67, 56, 56, 0.5);
 }
 
+.functioning {
+  font-family: "Roboto", sans-serif;
+}
+.functioning h1 {
+  font-size: 25px;
+  margin-top: 10%;
+  margin-left: 5%;
+}
 .functioning .choice {
-  border: 2px solid black;
+  box-shadow: 4px 5px rgba(125, 124, 124, 0.1);
+  background-color: #f8f8f8;
   border-radius: 20px;
-  margin: 8%;
+  margin-left: 11%;
+  margin-bottom: 6%;
+  max-width: 80%;
 }
 .functioning .choice:hover {
-  background-color: #9356DC 0.5;
+  background-color: #f8f3ff;
 }
 .functioning .choice p {
   float: left;
@@ -96,10 +107,10 @@ header img {
   color: white;
   border-radius: 30px;
   padding: 1%;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
   margin-top: 7%;
-  margin-left: -5%;
+  margin-left: -3%;
   font-size: small;
 }
 .functioning .choice .container {
@@ -115,7 +126,6 @@ header img {
 .functioning .choice span {
   display: inline-flex;
   color: black;
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 .functioning .choice a {
