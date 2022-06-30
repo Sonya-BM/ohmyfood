@@ -166,6 +166,9 @@ a{
 
 
 /*partie restaurants*/
+@mixin bgheart{
+  background: linear-gradient(to right, $color-secondary, $color-primary);
+}
 @mixin ticket{
    background-color: $color-tertiary;
   color: #0b8768;
@@ -234,7 +237,11 @@ h3{
 float: right;
     width:20%;
     position: relative;
-    top: 37%;
+    
+    top: 30%;
+    &:hover::before{
+       @include bgheart;
+    }
   }
 }
 

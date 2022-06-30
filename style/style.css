@@ -216,5 +216,8 @@ header img {
   float: right;
   width: 20%;
   position: relative;
-  top: 37%;
+  top: 30%;
+}
+.restaurants .containerrestaurant .heart i:hover::before {
+  background: linear-gradient(to right, #FF79DA, #9356DC);
 }/*# sourceMappingURL=style.css.map */
