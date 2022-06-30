@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "sass": "sass --watch /style/style.scss style/style.css",
+    "build": "postcss style/style.css -u autoprefixer -o .build/style.min.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +20,10 @@
   "homepage": "https://github.com/Sonya-BM/ohmyfood#readme",
   "dependencies": {
     "sass": "^1.53.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0"
   }
 }

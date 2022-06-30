@@ -209,14 +209,14 @@ margin: auto;
 
 
 .containerrestaurant {
-  margin-left: 5%;
   margin-top: 3%;
-  height: 80px;
   font-family: $font-family-text;
   float: left;
   text-align: justify;
   line-height: 5px;
 font-size: 14px;
+margin-left: 5%;
+width:100%;
   h3{
     font-weight: bold;
   }
@@ -225,66 +225,13 @@ font-size: 14px;
  
    }
    .heart{
-   position: absolute;
-   margin-left:65%;
-margin-top: -11%;
+
+    position: absolute;
+ margin-left:65%;
    font-size: 20px;
-
-    
-         }
+  }
 }
 
 
 }
-
-
-
-/*.restaurants{
-    h1{
-    @include hometitle;
-  }
-
- 
-  .card {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 90%;
-    border-radius: 20px;
-    margin: auto;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    .ticket{
-    @include ticket;
-    }
-    img {
-      display: flex;
-      object-fit: contain;
-      width: 100%;
-      border-radius: 20px 20px 0px 0px;
-    }
-  }
-  .container{
-    font-family: $font-family-text;
-    float: left;
-    text-align: justify;
-    line-height: 5px;
-  margin-left: -45%;
-  font-size: 14px;
-  h3{
-    font-weight: bold;
-
-  }
-     a{
-      @include link;
- 
-   }
-
-  }
-  .heart{
-float: right;    font-size: 23px;
-  }
-
-
-}*/
 
