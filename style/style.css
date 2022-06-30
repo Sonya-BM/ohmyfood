@@ -1,6 +1,7 @@
 /*police pour le texte*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&family=Shrikhand&display=swap"); /*partie mobile first*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&family=Shrikhand&display=swap");
+/*partie mobile first*/
 header {
   padding-top: 5%;
   padding-bottom: 4%;
@@ -29,6 +30,20 @@ header img {
   text-align: center;
   background-color: rgb(236, 236, 236);
   width: 68%;
+}
+.city input::-moz-placeholder {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-align: start;
+  padding-left: 9%;
+}
+.city input:-ms-input-placeholder {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-align: start;
+  padding-left: 9%;
 }
 .city input::placeholder {
   display: flex;
@@ -157,7 +172,8 @@ header img {
 .restaurants .card img {
   display: flex;
   justify-content: space-evenly;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100px;
   border-radius: 20px 20px 0px 0px;
@@ -168,20 +184,23 @@ header img {
   padding: 2%;
   font-size: small;
   float: right;
-  margin-left: 60%;
+  margin-left: 55%;
   font-weight: bold;
   position: absolute;
   font-family: "Roboto", sans-serif;
 }
 .restaurants .containerrestaurant {
-  margin-top: 3%;
+  display: flex;
   font-family: "Roboto", sans-serif;
-  float: left;
-  text-align: justify;
   line-height: 5px;
   font-size: 14px;
-  margin-left: 5%;
   width: 100%;
+  margin-left: 5%;
+}
+.restaurants .containerrestaurant .namerestaurant {
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
 }
 .restaurants .containerrestaurant h3 {
   font-weight: bold;
@@ -191,10 +210,11 @@ header img {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
-.restaurants .containerrestaurant .heart {
-  position: absolute;
-  margin-left: 65%;
-  font-size: 20px;
-}
-
-/*# sourceMappingURL=style.css.map */
+.restaurants .containerrestaurant .heart i {
+  display: flex;
+  justify-content: center;
+  float: right;
+  width: 20%;
+  position: relative;
+  top: 37%;
+}/*# sourceMappingURL=style.css.map */

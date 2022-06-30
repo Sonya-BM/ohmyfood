@@ -172,7 +172,7 @@ a{
    padding: 2%;
   font-size: small;
   float: right;
-  margin-left: 60%;
+  margin-left: 55%;
   font-weight: bold;
   position: absolute;
   font-family: $font-family-text;
@@ -209,26 +209,32 @@ margin: auto;
 
 
 .containerrestaurant {
-  margin-top: 3%;
+  display: flex;
   font-family: $font-family-text;
-  float: left;
-  text-align: justify;
   line-height: 5px;
 font-size: 14px;
+width: 100%;
 margin-left: 5%;
-width:100%;
-  h3{
+.namerestaurant{
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+}
+h3{
     font-weight: bold;
   }
+ 
      a{
       @include link;
  
    }
-   .heart{
-
-    position: absolute;
- margin-left:65%;
-   font-size: 20px;
+   .heart i{
+    display: flex;
+    justify-content: center;
+float: right;
+    width:20%;
+    position: relative;
+    top: 37%;
   }
 }
 
