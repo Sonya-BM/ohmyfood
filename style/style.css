@@ -84,7 +84,7 @@ header img {
 }
 .explore button {
   margin: auto;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 25px;
   border: none;
   color: white;
@@ -119,7 +119,7 @@ header img {
 }
 .functioning .choice p {
   float: left;
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   border-radius: 30px;
   padding: 1%;
@@ -137,7 +137,7 @@ header img {
   color: grey;
 }
 .functioning .choice i:hover {
-  color: #9356DC;
+  color: #9356dc;
 }
 .functioning .choice span {
   display: inline-flex;
@@ -175,11 +175,11 @@ header img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 100px;
+  height: 130px;
   border-radius: 20px 20px 0px 0px;
 }
 .restaurants .card .ticket {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #0b8768;
   padding: 2%;
   font-size: small;
@@ -191,11 +191,10 @@ header img {
 }
 .restaurants .containerrestaurant {
   display: flex;
-  font-family: "Roboto", sans-serif;
-  line-height: 5px;
-  font-size: 14px;
+  justify-content: space-evenly;
   width: 100%;
-  margin-left: 5%;
+  line-height: 8px;
+  height: auto;
 }
 .restaurants .containerrestaurant .namerestaurant {
   display: flex;
@@ -210,14 +209,26 @@ header img {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
-.restaurants .containerrestaurant .heart i {
-  display: flex;
-  justify-content: center;
-  float: right;
-  width: 20%;
-  position: relative;
-  top: 30%;
+.restaurants .containerrestaurant .heart {
+  transition-duration: 3s;
+  width: 30px;
+  background: url("/images/restaurants/heartregular.svg") no-repeat;
 }
-.restaurants .containerrestaurant .heart i:hover::before {
-  background: linear-gradient(to right, #FF79DA, #9356DC);
-}/*# sourceMappingURL=style.css.map */
+.restaurants .containerrestaurant .heart:hover {
+  background: url("../images/restaurants/heart.svg") no-repeat;
+}
+
+/*.heart a{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+float: right;
+    width:20%;
+    position: relative;
+        top: 30%;
+        color: black;
+    &:hover::before{
+       @include bgheart;
+
+    }
+  }*//*# sourceMappingURL=style.css.map */
