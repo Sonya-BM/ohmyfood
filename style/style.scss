@@ -166,8 +166,9 @@ $bshadow: rgb(125, 124, 124, 0.1);
 
 /*partie restaurants*/
 @mixin bgheart {
+  display: flex;
   transition-duration: 3s;
-width: 30px;
+width: 25px;
 background: url('/images/restaurants/heartregular.svg') no-repeat;
 }
 @mixin ticket {
@@ -195,6 +196,7 @@ background: url('/images/restaurants/heartregular.svg') no-repeat;
     width: 80%;
     height: auto;
     margin: auto;
+    margin-top: 5%;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     img {
@@ -220,6 +222,7 @@ height: auto;
       display: flex;
       justify-content: flex-start;
 width: 80%;
+
     }
     h3 {
       font-weight: bold;

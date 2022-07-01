@@ -166,6 +166,7 @@ header img {
   width: 80%;
   height: auto;
   margin: auto;
+  margin-top: 5%;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -210,8 +211,9 @@ header img {
   font-family: "Roboto", sans-serif;
 }
 .restaurants .containerrestaurant .heart {
+  display: flex;
   transition-duration: 3s;
-  width: 30px;
+  width: 25px;
   background: url("/images/restaurants/heartregular.svg") no-repeat;
 }
 .restaurants .containerrestaurant .heart:hover {
