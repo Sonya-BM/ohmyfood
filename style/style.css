@@ -147,6 +147,7 @@ header img {
 .functioning .choice a {
   color: black;
   text-decoration: none;
+  list-style-type: none;
   font-family: "Roboto", sans-serif;
 }
 
@@ -208,6 +209,7 @@ header img {
 .restaurants .containerrestaurant a {
   color: black;
   text-decoration: none;
+  list-style-type: none;
   font-family: "Roboto", sans-serif;
 }
 .restaurants .containerrestaurant .heart {
@@ -218,6 +220,30 @@ header img {
 }
 .restaurants .containerrestaurant .heart:hover {
   background: url("../images/restaurants/heart.svg") no-repeat;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: darkgrey;
+  height: auto;
+}
+footer a {
+  display: flex;
+  justify-content: flex-start;
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+}
+footer i {
+  color: white;
+}
+footer img {
+  font-size: 20%;
+  width: 20%;
+  margin-left: 5%;
 }
 
 /*.heart a{
