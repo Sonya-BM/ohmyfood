@@ -188,13 +188,16 @@ background: url('/images/restaurants/heartregular.svg') no-repeat;
 .restaurants {
   flex-wrap: wrap;
   margin-bottom: 15%;
+  background-color: rgb(239, 237, 237);
+  
   h1 {
     @include hometitle;
+    padding-top: 8%;
   }
 
   .card {
     display: flex;
-
+background-color: white;
     flex-wrap: wrap;
     width: 80%;
     height: auto;
@@ -308,5 +311,9 @@ margin-top: 23px;
 }
 }
 }
+
+
 }
+
+
 }

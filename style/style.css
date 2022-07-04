@@ -157,15 +157,18 @@ header img {
 .restaurants {
   flex-wrap: wrap;
   margin-bottom: 15%;
+  background-color: rgb(239, 237, 237);
 }
 .restaurants h1 {
   font-size: 25px;
   margin-top: 10%;
   margin-left: 5%;
   font-family: "Roboto", sans-serif;
+  padding-top: 8%;
 }
 .restaurants .card {
   display: flex;
+  background-color: white;
   flex-wrap: wrap;
   width: 80%;
   height: auto;
