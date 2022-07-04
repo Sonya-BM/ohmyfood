@@ -37,6 +37,7 @@ header img {
   color: black;
   text-align: start;
   padding-left: 9%;
+  width: 100%;
 }
 .city input:-ms-input-placeholder {
   display: flex;
@@ -44,6 +45,7 @@ header img {
   color: black;
   text-align: start;
   padding-left: 9%;
+  width: 100%;
 }
 .city input::placeholder {
   display: flex;
@@ -51,6 +53,7 @@ header img {
   color: black;
   text-align: start;
   padding-left: 9%;
+  width: 100%;
 }
 
 .explore {
@@ -251,17 +254,30 @@ footer .logofooter {
   margin-left: 35px;
 }
 
-/*.heart a{
-    display: flex;
-    font-size: 20px;
-    justify-content: center;
-float: right;
-    width:20%;
-    position: relative;
-        top: 30%;
-        color: black;
-    &:hover::before{
-       @include bgheart;
+@media screen and (min-width: 768px) {
+  header img {
+    width: 30%;
+  }
 
-    }
-  }*//*# sourceMappingURL=style.css.map */
+  .explore {
+    height: 20%;
+  }
+  .explore button {
+    width: 70%;
+  }
+
+  .functioning .choice {
+    height: 60px;
+    margin-bottom: 30px;
+  }
+  .functioning .choice p {
+    margin-top: 20px;
+  }
+  .functioning .choice .container {
+    display: inline;
+    justify-content: flex-start;
+  }
+  .functioning .choice .container span {
+    margin-top: 23px;
+  }
+}/*# sourceMappingURL=style.css.map */
