@@ -285,6 +285,22 @@ footer .logofooter {
   }
 }
 @media screen and (min-width: 992px) {
+  .explore {
+    height: 200px;
+  }
+  .explore h2 {
+    margin-top: 10%;
+  }
+  .explore button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    width: 50%;
+    padding: 3%;
+    font-size: 25px;
+  }
+
   .functioning .choice {
     display: inline-flex;
     width: 35%;
@@ -301,5 +317,27 @@ footer .logofooter {
   }
   .functioning .choice .container i {
     margin-left: 5%;
+  }
+
+  /*restaurants*/
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .restaurants h1 {
+    padding-top: 0%;
+    width: 100%;
+  }
+  .restaurants .card {
+    width: 40%;
+  }
+  .restaurants .card .ticket {
+    background-color: #99e2d0;
+    color: #0b8768;
+    font-size: small;
+    margin-left: 30%;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
   }
 }/*# sourceMappingURL=style.css.map */
