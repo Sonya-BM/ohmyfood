@@ -283,4 +283,23 @@ footer .logofooter {
   .functioning .choice .container span {
     margin-top: 23px;
   }
+}
+@media screen and (min-width: 992px) {
+  .functioning .choice {
+    display: inline-flex;
+    width: 35%;
+  }
+  .functioning .choice p {
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+  }
+  .functioning .choice .container {
+    width: 100%;
+    padding: 0%;
+  }
+  .functioning .choice .container i {
+    margin-left: 5%;
+  }
 }/*# sourceMappingURL=style.css.map */
