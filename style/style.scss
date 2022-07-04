@@ -38,7 +38,7 @@ header {
       @include font;
       text-align: start;
       padding-left: 9%;
-      width:100%;
+      width: 100%;
     }
   }
 }
@@ -112,7 +112,7 @@ $bshadow: rgb(125, 124, 124, 0.1);
 }
 @mixin hometitle {
   font-size: 25px;
-  margin-top: 10%;
+  margin-top: 8%;
   margin-left: 5%;
   font-family: $font-family-text;
 }
@@ -170,8 +170,8 @@ $bshadow: rgb(125, 124, 124, 0.1);
 @mixin bgheart {
   display: flex;
   transition-duration: 3s;
-width: 25px;
-background: url('/images/restaurants/heartregular.svg') no-repeat;
+  width: 25px;
+  background: url("/images/restaurants/heartregular.svg") no-repeat;
 }
 @mixin ticket {
   background-color: $color-tertiary;
@@ -187,9 +187,9 @@ background: url('/images/restaurants/heartregular.svg') no-repeat;
 
 .restaurants {
   flex-wrap: wrap;
-  margin-bottom: 15%;
+
   background-color: rgb(239, 237, 237);
-  
+  padding-bottom: 20%;
   h1 {
     @include hometitle;
     padding-top: 8%;
@@ -197,7 +197,7 @@ background: url('/images/restaurants/heartregular.svg') no-repeat;
 
   .card {
     display: flex;
-background-color: white;
+    background-color: white;
     flex-wrap: wrap;
     width: 80%;
     height: auto;
@@ -222,13 +222,12 @@ background-color: white;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-line-height: 8px;
-height: auto;
+    line-height: 8px;
+    height: auto;
     .namerestaurant {
       display: flex;
       justify-content: flex-start;
-width: 80%;
-
+      width: 80%;
     }
     h3 {
       font-weight: bold;
@@ -238,16 +237,15 @@ width: 80%;
       @include link;
     }
     .heart {
-      
       @include bgheart;
     }
     .heart:hover {
-      background: url('../images/restaurants/heart.svg') no-repeat;
+      background: url("../images/restaurants/heart.svg") no-repeat;
     }
   }
 }
 
-footer{
+footer {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -256,64 +254,57 @@ footer{
   line-height: 30px;
   padding-top: 5%;
   width: 100%;
-  i{
+  i {
     width: 15px;
-margin:auto;
-margin-left: 0%;
-    font-size: 10px; 
+    margin: auto;
+    margin-left: 0%;
+    font-size: 10px;
   }
-  a{
-  
+  a {
     @include link;
     color: white;
-
   }
- 
-  li{
+
+  li {
     list-style-type: none;
   }
- 
-  
 
-.logofooter{
-width: 25%;
-margin-left: 35px;
-}
+  .logofooter {
+    width: 100px;
+    margin-left: 35px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-header{
-  img{
-    width: 30%;
+  header {
+    img {
+      width: 30%;
+    }
+  }
+  .explore {
+    height: 20%;
+    button {
+      width: 70%;
+    }
+  }
+
+  .functioning {
+    .choice {
+      height: 60px;
+      margin-bottom: 30px;
+      p {
+        margin-top: 20px;
+      }
+      .container {
+        display: inline;
+        justify-content: flex-start;
+        span {
+          margin-top: 23px;
+        }
+      }
+    }
   }
 }
-.explore{
-  height: 20%;
-  button{
-   width: 70%;
-  }
-}
 
-.functioning{
-
-.choice{
-height: 60px;
-margin-bottom: 30px;
-p{
-  margin-top: 20px;
- 
-}
-.container{
-display: inline;
-justify-content: flex-start;
-span{
-margin-top: 23px;
-}
-}
-}
-
-
-}
-
-
+@media screen and (min-width: 992px) {
 }
