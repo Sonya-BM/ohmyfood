@@ -92,21 +92,24 @@ $font-family-text: "Roboto", sans-serif;
     .card{
         border: 2px solid black;  
         border-radius: 15px;
-        margin: auto;
+        margin-left: 0%;
+        width: 95%;
+        background-color: white;
    .mealscontent{
     display: flex;
     flex-wrap: wrap;
     line-height: 8px;
-    width: 60%;
-   
+    width: 68%;
+   padding-left: 3%;
 h3{
+    width: 100%;
     margin-bottom: 0px;
 }
 span{
 display: flex;
 align-content: space-around;
 flex-wrap: wrap;
-margin-right: -95px;
+margin-right: -70px;
 }
    }
   
