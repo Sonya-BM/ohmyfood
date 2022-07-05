@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&family=Shrikhand&display=swap"); /*partie mobile first*/
 
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+$font-color-btn: white;
+$bg-explore: rgb(247, 247, 247);
+
 header{
     display: flex;
     justify-content: space-around;
@@ -24,7 +30,7 @@ $font-family-title:"Shrikhand", sans-serif;
     display: flex;
     margin-left: 10px;
     font-size:20px;
-    font-family: "Shrikhand", sans-serif;
+    font-family: $font-family-title;
 }
 
 $font-family-text: "Roboto", sans-serif;
@@ -44,7 +50,7 @@ margin-right:25px;
     background: url("/images/restaurants/heartregular.svg") no-repeat;
   }
 .menu{
-    background-color: darkgray;
+    background-color: $bg-explore;
     border-radius: 30px 30px 0px 0px;
 position: relative;
 margin-top: 55%;/*170px*/
@@ -66,11 +72,17 @@ padding-left: 10px;
           }
        
     }
-   .subtitle{
-    span{
-        width: 10px;
-        height: 20px;
-        background-color: green;
+
+    @mixin menutitle{
+        border-bottom: solid $color-tertiary;
+        width: 40px;
+        font-size: 15px;
+        font-family: $font-family-text;
+        padding-bottom: 5px;
     }
+   .subtitle{
+  h2{
+   @include menutitle
+  }
    }
 }
