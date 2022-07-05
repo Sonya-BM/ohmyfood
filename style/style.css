@@ -234,7 +234,7 @@ footer {
   background-color: rgb(57, 55, 55);
   height: auto;
   line-height: 30px;
-  padding-top: 5%;
+  padding-top: 3%;
   width: 100%;
 }
 footer i {
@@ -285,6 +285,15 @@ footer .logofooter {
   }
 }
 @media screen and (min-width: 992px) {
+  header {
+    height: 10px;
+    padding: 3%;
+  }
+  header img {
+    margin-top: -1%;
+    width: 20%;
+  }
+
   .explore {
     height: 200px;
   }
@@ -336,6 +345,7 @@ footer .logofooter {
     background-color: #99e2d0;
     color: #0b8768;
     font-size: small;
+    padding: 1%;
     margin-left: 30%;
     font-weight: bold;
     font-family: "Roboto", sans-serif;

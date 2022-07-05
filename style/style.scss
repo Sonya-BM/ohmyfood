@@ -252,7 +252,7 @@ footer {
   background-color: rgb(57, 55, 55);
   height: auto;
   line-height: 30px;
-  padding-top: 5%;
+  padding-top: 3%;
   width: 100%;
   i {
     width: 15px;
@@ -307,7 +307,16 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
-.explore{
+header{
+  height: 10px;
+  padding: 3%;
+  img{
+ margin-top: -1%;
+    width:20%;
+  }
+}
+
+  .explore{
 height: 200px;
 h2{
   margin-top: 10%;
@@ -347,6 +356,7 @@ padding-bottom:5%;
   background-color: $color-tertiary;
   color: #0b8768;
   font-size: small;
+  padding: 1%;
   margin-left:30%;
   font-weight: bold;
   font-family: $font-family-text;
