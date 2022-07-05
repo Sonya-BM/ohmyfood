@@ -89,6 +89,7 @@ $font-family-text: "Roboto", sans-serif;
   }
   .meals {
     @include font;
+    margin-bottom: 40px;
     .card{
         box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 10%) ;
         border-radius: 15px;

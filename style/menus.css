@@ -63,6 +63,7 @@ header .back {
 .menu .meals {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
+  margin-bottom: 40px;
 }
 .menu .meals .card {
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
