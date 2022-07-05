@@ -24,7 +24,7 @@ header .back {
   border-radius: 30px 30px 0px 0px;
   position: relative;
   margin-top: 55%;
-  /*170px*/
+  padding-top: 15px;
   padding-left: 10px;
 }
 .menu div {
@@ -59,4 +59,28 @@ header .back {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   padding-bottom: 5px;
+}
+.menu .meals {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+}
+.menu .meals .card {
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: auto;
+}
+.menu .meals .card .mealscontent {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 8px;
+  width: 60%;
+}
+.menu .meals .card .mealscontent h3 {
+  margin-bottom: 0px;
+}
+.menu .meals .card .mealscontent span {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  margin-right: -95px;
 }/*# sourceMappingURL=menus.css.map */

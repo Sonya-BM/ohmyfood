@@ -7,82 +7,109 @@ $color-tertiary: #99e2d0;
 $font-color-btn: white;
 $bg-explore: rgb(247, 247, 247);
 
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-   
- .back{
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .back {
     margin-left: 17px;
     margin-right: -20px;
- }
+  }
 }
 
-.banner{
-    position:absolute;
-   img{
+.banner {
+  position: absolute;
+  img {
     width: 100%;
     height: 20%;
-   }
+  }
 }
-$font-family-title:"Shrikhand", sans-serif;
-@mixin title{
-    display: flex;
-    margin-left: 10px;
-    font-size:20px;
-    font-family: $font-family-title;
+$font-family-title: "Shrikhand", sans-serif;
+@mixin title {
+  display: flex;
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: $font-family-title;
 }
 
 $font-family-text: "Roboto", sans-serif;
 @mixin hometitle {
-    font-size: 25px;
-    margin-top: 8%;
-    margin-left: 5%;
-    font-family: $font-family-text;
-
-  }
+  font-size: 25px;
+  margin-top: 8%;
+  margin-left: 5%;
+  font-family: $font-family-text;
+}
 @mixin bgheart {
-   
-    transition-duration: 3s;
-    width: 25px;
-    margin-top: 10px;
-margin-right:25px;
-    background: url("/images/restaurants/heartregular.svg") no-repeat;
-  }
-.menu{
-    background-color: $bg-explore;
-    border-radius: 30px 30px 0px 0px;
-position: relative;
-margin-top: 55%;/*170px*/
-padding-left: 10px;
-    div{
-       display: flex;
-       justify-content:space-between;
-        h1{
-            @include title;
-        }
-        h2{
-@include hometitle;
-        }
-        .heart {
-            @include bgheart;
-          }
-          .heart:hover {
-            background: url("../images/restaurants/heart.svg") no-repeat;
-          }
-       
-    }
+  transition-duration: 3s;
+  width: 25px;
+  margin-top: 10px;
+  margin-right: 25px;
+  background: url("/images/restaurants/heartregular.svg") no-repeat;
+}
 
-    @mixin menutitle{
-        border-bottom: solid $color-tertiary;
-        width: 40px;
-        font-size: 15px;
-        font-family: $font-family-text;
-        padding-bottom: 5px;
+@mixin menutitle {
+  border-bottom: solid $color-tertiary;
+  width: 40px;
+  font-size: 15px;
+  font-family: $font-family-text;
+  padding-bottom: 5px;
+}
+@mixin font {
+  font-family: $font-family-text;
+  font-size: 13px;
+}
+.menu {
+  background-color: $bg-explore;
+  border-radius: 30px 30px 0px 0px;
+  position: relative;
+  margin-top: 55%;
+  padding-top: 15px;
+  padding-left: 10px;
+  div {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      @include title;
     }
-   .subtitle{
-  h2{
-   @include menutitle
+    h2 {
+      @include hometitle;
+    }
+    .heart {
+      @include bgheart;
+    }
+    .heart:hover {
+      background: url("../images/restaurants/heart.svg") no-repeat;
+    }
   }
+  .subtitle {
+    h2 {
+      @include menutitle;
+    }
+  }
+  .meals {
+    @include font;
+    .card{
+        border: 2px solid black;  
+        border-radius: 15px;
+        margin: auto;
+   .mealscontent{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 8px;
+    width: 60%;
+   
+h3{
+    margin-bottom: 0px;
+}
+span{
+display: flex;
+align-content: space-around;
+flex-wrap: wrap;
+margin-right: -95px;
+}
    }
+  
+  }
+      }
 }
