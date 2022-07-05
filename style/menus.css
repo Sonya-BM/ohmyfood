@@ -65,11 +65,12 @@ header .back {
   font-size: 13px;
 }
 .menu .meals .card {
-  border: 2px solid black;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   margin-left: 0%;
   width: 95%;
   background-color: white;
+  margin-bottom: 16px;
 }
 .menu .meals .card .mealscontent {
   display: flex;
