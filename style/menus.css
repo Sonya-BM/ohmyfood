@@ -73,12 +73,8 @@ header .back {
   background-color: white;
   margin-bottom: 16px;
 }
-.menu .meals .card .bord {
-  width: 3px;
-}
 .menu .meals .card .bord:hover {
   background-color: #99e2d0;
-  width: 50px;
   border-radius: 0px 15px 15px 0px;
 }
 .menu .meals .card .mealscontent {
@@ -92,9 +88,9 @@ header .back {
   width: 100%;
   margin-bottom: 0px;
 }
-.menu .meals .card .mealscontent span {
+.menu .meals .card span {
   display: flex;
-  align-content: space-around;
-  flex-wrap: wrap;
-  margin-right: -70px;
+  align-content: space-evenly;
+  float: right;
+  margin-top: 30px;
 }/*# sourceMappingURL=menus.css.map */

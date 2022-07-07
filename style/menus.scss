@@ -99,13 +99,11 @@ $font-family-text: "Roboto", sans-serif;
         width: 95%;
         background-color: white;
         margin-bottom: 16px;
-.bord{
-width: 3px;
+       
+        .bord{
 &:hover{
   background-color: $color-tertiary;
-  width: 50px;
   border-radius: 0px 15px 15px 0px;
-
 }
 }
       
@@ -119,16 +117,16 @@ h3{
     width: 100%;
     margin-bottom: 0px;
 }
-span{
-display: flex;
-align-content: space-around;
-flex-wrap: wrap;
-margin-right: -70px;
 
-}
 
    }
-  
+   span{
+    display: flex;
+    align-content: space-evenly;
+    float: right;
+    margin-top: 30px;
+    
+    }
   }
       }
 }
