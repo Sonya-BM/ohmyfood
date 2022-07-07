@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Sonya-BM/ohmyfood#readme",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "sass": "^1.53.0"
   },
   "devDependencies": {
