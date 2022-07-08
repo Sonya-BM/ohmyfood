@@ -114,8 +114,8 @@ $font-family-text: "Roboto", sans-serif;
         content: url("/images/restaurants/circle-check-solid.svg");
         background-image: url(/images/restaurants/circle-check-solid.svg);
         background-size: 18px;
-        background-repeat: no-repeat;
         background-position: center;
+        background-repeat: no-repeat;
       right:0%;
       @keyframes bord {
         from {
@@ -123,7 +123,7 @@ $font-family-text: "Roboto", sans-serif;
 
         }
         to {
-          padding-left: -42px;
+          padding-left: -5px;
 
         }
     }

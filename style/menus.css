@@ -92,8 +92,8 @@ header .back {
   content: url("/images/restaurants/circle-check-solid.svg");
   background-image: url(/images/restaurants/circle-check-solid.svg);
   background-size: 18px;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   right: 0%;
 }
 @-webkit-keyframes bord {
@@ -101,7 +101,7 @@ header .back {
     padding-left: 0px;
   }
   to {
-    padding-left: -42px;
+    padding-left: -5px;
   }
 }
 @keyframes bord {
@@ -109,7 +109,7 @@ header .back {
     padding-left: 0px;
   }
   to {
-    padding-left: -42px;
+    padding-left: -5px;
   }
 }
 .menu .meals .card .mealscontent {
