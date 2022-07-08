@@ -73,30 +73,21 @@ header .back {
   background-color: white;
   margin-bottom: 16px;
 }
-.menu .meals .card:hover {
-  background-color: #99e2d0;
+.menu .meals .card:hover::before {
+  background: #99e2d0;
+  position: absolute;
+  margin-right: 15px;
   border-radius: 0px 15px 15px 0px;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-}
-@-webkit-keyframes mymove {
-  from {
-    left: 0%;
-  }
-  to {
-    left: 20%;
-  }
-}
-@keyframes mymove {
-  from {
-    left: 0%;
-  }
-  to {
-    left: 20%;
-  }
+  padding: 22px;
+  content: url("/img/icone/16x16/facebook.gif");
+  background-image: url(/images/restaurants/circle-check-solid.svg);
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0%;
 }
 .menu .meals .card .bord {
-  width: 3%;
+  width: auto;
 }
 .menu .meals .card .bord:hover {
   width: 50px;

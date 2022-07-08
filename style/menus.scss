@@ -99,23 +99,27 @@ $font-family-text: "Roboto", sans-serif;
       width: 95%;
       background-color: white;
       margin-bottom: 16px;
-      &:hover {
-        background-color: $color-tertiary;
+      &:hover::before {
+        background: $color-tertiary;
+        position: absolute;
+        margin-right: 15px;
         border-radius: 0px 15px 15px 0px;
-        animation-timing-function:ease-in; 
-           }
-           @keyframes mymove {
-            from {left: 0%;}
-            to {left: 20%;}
-          }
-        .bord {
-        width: 3%;
+        padding: 22px;
+        content: url("/img/icone/16x16/facebook.gif");
+        background-image: url(/images/restaurants/circle-check-solid.svg);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+      right: 0%;
+
+      }
+      .bord {
+        width: auto;
         &:hover {
           width: 50px;
           background-color: $color-tertiary;
           border-radius: 0px 15px 15px 0px;
         }
-     
       }
 
       .mealscontent {
@@ -124,15 +128,13 @@ $font-family-text: "Roboto", sans-serif;
         line-height: 8px;
         width: 68%;
         padding-left: 3%;
-       
+
         h3 {
           width: 100%;
           margin-bottom: 0px;
-   
         }
-    
       }
-   
+
       span {
         display: flex;
         align-content: space-evenly;
@@ -140,7 +142,5 @@ $font-family-text: "Roboto", sans-serif;
         margin-top: 30px;
       }
     }
-    
   }
-  
 }
