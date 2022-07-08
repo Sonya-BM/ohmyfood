@@ -85,20 +85,10 @@ header .back {
   padding-left: 35px;
   white-space: nowrap;
   /* pas de passage à la ligne */
-  -webkit-animation: defilement-rtl 15s infinite linear;
-          animation: defilement-rtl 15s infinite linear;
-  -webkit-animation-name: defilement-rtl;
-          animation-name: defilement-rtl;
-  /* référence à la règle @keyframes mise en oeuvre */
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  /* valeur à ajuster suivant la longueur du message */
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  /* boucle continue */
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  /* pas vraiment utile ici */
+  -webkit-animation: bord 1s ease-in-out;
+          animation: bord 1s ease-in-out;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
   content: url("/images/restaurants/circle-check-solid.svg");
   background-image: url(/images/restaurants/circle-check-solid.svg);
   background-size: 18px;
@@ -106,24 +96,20 @@ header .back {
   background-position: center;
   right: 0%;
 }
-@-webkit-keyframes defilement-rtl {
-  0% {
-    transform: translate3d(0, 0, 0);
-    /* position initiale à droite */
+@-webkit-keyframes bord {
+  from {
+    padding-left: 0px;
   }
-  100% {
-    transform: translate3d(-100%, 0, 0);
-    /* position finale à gauche */
+  to {
+    padding-left: -42px;
   }
 }
-@keyframes defilement-rtl {
-  0% {
-    transform: translate3d(0, 0, 0);
-    /* position initiale à droite */
+@keyframes bord {
+  from {
+    padding-left: 0px;
   }
-  100% {
-    transform: translate3d(-100%, 0, 0);
-    /* position finale à gauche */
+  to {
+    padding-left: -42px;
   }
 }
 .menu .meals .card .mealscontent {
