@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&family=Shrikhand&display=swap");
 /*partie mobile first*/
@@ -72,6 +73,7 @@ header .back {
   width: 95%;
   background-color: white;
   margin-bottom: 16px;
+  overflow: hidden;
 }
 .menu .meals .card:hover::before {
   background: #99e2d0;
@@ -81,16 +83,48 @@ header .back {
   border-radius: 0px 15px 15px 0px;
   padding: 22px;
   padding-left: 35px;
+  white-space: nowrap;
+  /* pas de passage à la ligne */
+  -webkit-animation: defilement-rtl 15s infinite linear;
+          animation: defilement-rtl 15s infinite linear;
+  -webkit-animation-name: defilement-rtl;
+          animation-name: defilement-rtl;
+  /* référence à la règle @keyframes mise en oeuvre */
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  /* valeur à ajuster suivant la longueur du message */
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  /* boucle continue */
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  /* pas vraiment utile ici */
   content: url("/images/restaurants/circle-check-solid.svg");
   background-image: url(/images/restaurants/circle-check-solid.svg);
   background-size: 18px;
   background-repeat: no-repeat;
   background-position: center;
   right: 0%;
-  transition-property: width;
-  transition-duration: 2s;
-  transition-timing-function: linear;
-  transition-delay: 1s;
+}
+@-webkit-keyframes defilement-rtl {
+  0% {
+    transform: translate3d(0, 0, 0);
+    /* position initiale à droite */
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+    /* position finale à gauche */
+  }
+}
+@keyframes defilement-rtl {
+  0% {
+    transform: translate3d(0, 0, 0);
+    /* position initiale à droite */
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+    /* position finale à gauche */
+  }
 }
 .menu .meals .card .mealscontent {
   display: flex;
