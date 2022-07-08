@@ -87,6 +87,10 @@ header .back {
   background-repeat: no-repeat;
   background-position: center;
   right: 0%;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
 }
 .menu .meals .card .mealscontent {
   display: flex;
@@ -94,6 +98,8 @@ header .back {
   line-height: 8px;
   width: 68%;
   padding-left: 3%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .meals .card .mealscontent h3 {
   width: 100%;
