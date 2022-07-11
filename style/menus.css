@@ -78,11 +78,12 @@ header .back {
 .menu .meals .card:hover::before {
   background: #99e2d0;
   position: absolute;
-  margin-right: 4.5%;
+  margin-right: 5%;
   /*15px*/
   border-radius: 0px 15px 15px 0px;
-  padding: 22px;
+  /*padding: 22px;
   padding-left: 35px;
+  */
   white-space: nowrap;
   /* pas de passage à la ligne */
   -webkit-animation: bord 1s ease-in-out;
@@ -98,18 +99,20 @@ header .back {
 }
 @-webkit-keyframes bord {
   from {
-    padding-left: 0px;
+    padding: -5px;
+    padding-bottom: 42px;
   }
   to {
-    padding-left: -5px;
+    padding: 22px;
   }
 }
 @keyframes bord {
   from {
-    padding-left: 0px;
+    padding: -5px;
+    padding-bottom: 42px;
   }
   to {
-    padding-left: -5px;
+    padding: 22px;
   }
 }
 .menu .meals .card .mealscontent {

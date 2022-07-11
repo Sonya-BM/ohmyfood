@@ -104,10 +104,11 @@ $font-family-text: "Roboto", sans-serif;
      
         background: $color-tertiary;
         position: absolute;
-        margin-right: 4.5%;/*15px*/
+        margin-right: 5%;/*15px*/
         border-radius: 0px 15px 15px 0px;
-        padding: 22px;
+        /*padding: 22px;
         padding-left: 35px;
+        */
         white-space: nowrap;                  /* pas de passage à la ligne */
         animation: bord 1s ease-in-out;
         animation-delay: 1ms;
@@ -119,15 +120,15 @@ $font-family-text: "Roboto", sans-serif;
       right:0%;
       @keyframes bord {
         from {
-          padding-left: 0px;
-
+          padding: -5px;
+        padding-bottom: 42px;
         }
         to {
-          padding-left: -5px;
+          padding: 22px;
 
         }
     }
-    }
+       }
       
     
 
@@ -150,7 +151,9 @@ $font-family-text: "Roboto", sans-serif;
         align-content: space-evenly;
         float: right;
         margin-top: 30px;
+ 
       }
+
     }
   }
 }
