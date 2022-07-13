@@ -12,6 +12,10 @@ header {
   justify-content: space-around;
   align-items: center;
 
+  img{
+    font-size: medium;
+  }
+ 
   .back {
     margin-left: 17px;
     margin-right: -20px;
@@ -21,6 +25,7 @@ header {
 .banner {
   position: absolute;
   img {
+    object-fit:cover ;
     width: 100%;
     height: 20%;
   }
@@ -67,6 +72,7 @@ $font-family-text: "Roboto", sans-serif;
   margin-top: 55%;
   padding-top: 15px;
   padding-left: 10px;
+
   div {
     display: flex;
     justify-content: space-between;
@@ -95,42 +101,33 @@ $font-family-text: "Roboto", sans-serif;
     .card {
       box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 10%);
       border-radius: 15px;
-      margin-left: 0%;
+      margin-left: 3px;
+
       width: 95%;
       background-color: white;
       margin-bottom: 16px;
-      overflow: hidden;  
+      overflow: hidden;
+
       &:hover::before {
-     
         background: $color-tertiary;
         position: absolute;
-        margin-right: 5%;/*15px*/
+        margin-right: 4%; /*15px*/
         border-radius: 0px 15px 15px 0px;
-        /*padding: 22px;
-        padding-left: 35px;
-        */
-        white-space: nowrap;                  /* pas de passage à la ligne */
+        white-space: nowrap; /* pas de passage à la ligne */
         animation: bord 1s ease-in-out;
         animation-delay: 1ms;
-        content: url("/images/restaurants/circle-check-solid.svg");
-        background-image: url(/images/restaurants/circle-check-solid.svg);
-        background-size: 18px;
-        background-position: center;
-        background-repeat: no-repeat;
-      right:0%;
-      @keyframes bord {
-        from {
-          padding: -5px;
-        padding-bottom: 42px;
+        content: url();
+        right: 0%;
+        @keyframes bord {
+          from {
+            padding: -5px;
+            padding-bottom: 42px;
+          }
+          to {
+            padding: 22px;
+          }
         }
-        to {
-          padding: 22px;
-
-        }
-    }
-       }
-      
-    
+      }
 
       .mealscontent {
         display: flex;
@@ -145,15 +142,47 @@ $font-family-text: "Roboto", sans-serif;
           margin-bottom: 0px;
         }
       }
-
+    
       span {
         display: flex;
         align-content: space-evenly;
         float: right;
         margin-top: 30px;
- 
       }
-
+      .colorbord {
+        display: flex;
+     
+        .verif {
+          display: flex;
+          margin: auto;
+          margin-right: 15px;
+          text-align: center;
+          color: white;
+          z-index: 3;
+          transition-duration: 0.8s;
+          transition-property: transform;
+          &:hover {
+          transform: rotate(-45deg);     
+             }
+                      }
+      }
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+
+.banner {
+  img {
+    height: 10%;
+  }
+}
+}
+@media screen and (min-width: 992px) {
+
+  .banner {
+    img {
+      height: 10%;
+    }
+  }
+  }
