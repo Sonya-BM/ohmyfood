@@ -12,10 +12,10 @@ header {
   justify-content: space-around;
   align-items: center;
 
-  img{
+  img {
     font-size: medium;
   }
- 
+
   .back {
     margin-left: 17px;
     margin-right: -20px;
@@ -25,9 +25,8 @@ header {
 .banner {
   position: absolute;
   img {
-    object-fit:cover ;
+    object-fit: cover;
     width: 100%;
-    height: 20%;
   }
 }
 $font-family-title: "Shrikhand", sans-serif;
@@ -97,7 +96,7 @@ $font-family-text: "Roboto", sans-serif;
   .meals {
     @include font;
     margin-bottom: 40px;
-
+margin-left: 1.5%;
     .card {
       box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 10%);
       border-radius: 15px;
@@ -142,7 +141,7 @@ $font-family-text: "Roboto", sans-serif;
           margin-bottom: 0px;
         }
       }
-    
+
       span {
         display: flex;
         align-content: space-evenly;
@@ -151,7 +150,7 @@ $font-family-text: "Roboto", sans-serif;
       }
       .colorbord {
         display: flex;
-     
+
         .verif {
           display: flex;
           margin: auto;
@@ -162,27 +161,45 @@ $font-family-text: "Roboto", sans-serif;
           transition-duration: 0.8s;
           transition-property: transform;
           &:hover {
-          transform: rotate(-45deg);     
-             }
-                      }
+            transform: rotate(-45deg);
+          }
+        }
       }
     }
   }
 }
 
 @media screen and (min-width: 768px) {
-
-.banner {
-  img {
-    height: 10%;
-  }
-}
-}
-@media screen and (min-width: 992px) {
-
   .banner {
-    img {
-      height: 10%;
+    content: url("/images/restaurants/alafrancaise.jpg");
+    background: url("/images/restaurants/alafrancaise.jpg");
+ background-repeat: no-repeat;
+ max-height: 60%;
+ width: 100%;
+ object-fit:cover;
+ position: absolute;
+    img{
+ display: none;
+ }
+  }
+  .menu{
+    margin-top: 40%;
+    .meals{
+      margin-left: 2.3%;
+    
     }
+    }
+}
+@media screen and (min-width:992px){
+  .banner{
+    max-height: 80%;
+
   }
-  }
+  .menu{
+    margin-top: 35%;
+    .meals{
+      margin-left: 3%;
+    
+    }
+    }
+}
