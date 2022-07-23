@@ -1,0 +1,259 @@
+/*police pour le texte*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&family=Shrikhand&display=swap"); /*partie mobile first*/
+
+.functioning {
+  font-family: $font-family-text;
+
+  h1 {
+    @include hometitle;
+  }
+  .choice {
+    box-shadow: 4px 5px $bshadow;
+    background-color: $bg-choice;
+
+    border-radius: 20px;
+    margin-left: 11%;
+    margin-bottom: 6%;
+    max-width: 80%;
+  
+    p {
+      float: left;
+      background-color: $color-primary;
+      color: white;
+      border-radius: 30px;
+      padding: 1%;
+      padding-left: 2%;
+      padding-right: 2%;
+      margin-top: 7%;
+      margin-left: -3%;
+      font-size: small;
+    }
+    .container {
+      padding: 7%;
+        }
+      .active{
+        color: $color-primary;
+      }
+    i {
+      margin-right: 5%;
+      color: grey;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+    span {
+      display: inline-flex;
+      color: black;
+      font-weight: bold;
+    }
+    a {
+      @include link;
+    }
+  }
+  .active{
+     background-color: $bg-functionning;
+ 
+  }
+ 
+}
+
+/*partie restaurants*/
+/*fin loader*/
+.loader {
+  display: flex;
+
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  z-index: 100;
+  background-color: white;
+
+  animation:loader 3s forwards;
+  @keyframes loader {
+    from{
+
+opacity: 0;
+
+    }
+    to{
+
+opacity: 100;  
+visibility:hidden;
+  }
+  }
+.roundloader{
+  text-align: center;
+  border: 16px solid $color-tertiary;
+  border-radius: 50%;
+  border-top: 20px solid $color-secondary;
+  border-bottom: 20px solid $color-primary;
+  animation: roundloader;
+  animation-duration: 3s;
+  opacity: 0;
+margin: auto;
+z-index: 100;
+
+}
+}
+@keyframes roundloader {
+  to {
+    transform: rotate(0deg);
+   opacity: 1;
+   width: 150px;
+   height: 150px;
+  }
+  from {
+   transform: rotate(360deg);
+   width: 150px;
+height: 150px;
+    opacity: 0;
+    
+  }
+}
+/*fin loader*/
+.restaurants {
+  flex-wrap: wrap;
+
+  background-color: rgb(239, 237, 237);
+  padding-bottom: 10%;
+  h1 {
+    @include hometitle;
+    padding-top: 8%;
+  }
+
+  .card {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    img {
+      display: flex;
+      justify-content: space-evenly;
+      object-fit: cover;
+      width: 100%;
+      height: 130px;
+      border-radius: 20px 20px 0px 0px;
+    }
+    .ticket {
+      @include ticket;
+    }
+  }
+
+  .containerrestaurant {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    line-height: 8px;
+    height: auto;
+    .namerestaurant {
+      display: flex;
+      justify-content: flex-start;
+      width: 80%;
+      margin-left: 20px;
+    }
+    h3 {
+      font-weight: bold;
+    }
+
+    a {
+      @include link;
+    }
+    .heart {
+      @include bgheart;
+      margin-top: 20px;
+    }
+    .heart:hover {
+      background: url("../images/restaurants/heart.svg") no-repeat;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .explore {
+    height: 20%;
+    button {
+      width: 70%;
+    }
+  }
+
+  .functioning {
+    .choice {
+      height: 60px;
+      margin-bottom: 30px;
+      p {
+        margin-top: 20px;
+      }
+      .container {
+        display: inline;
+        justify-content: flex-start;
+        span {
+          margin-top: 23px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .explore {
+    height: 200px;
+    h2 {
+      margin-top: 10%;
+    }
+    button {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      height: 100px;
+      width: 50%;
+      padding: 2.5%;
+      font-size: 25px;
+    }
+  }
+
+  .functioning {
+    .choice {
+      display: inline-flex;
+      width: 35%;
+      p {
+        padding-right: 3%;
+        padding-left: 3%;
+        padding-top: 2%;
+        padding-bottom: 5%;
+      }
+      .container {
+        width: 100%;
+        padding: 0%;
+        i {
+          margin-left: 5%;
+        }
+      }
+    }
+  }
+
+  /*restaurants*/
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    h1 {
+      padding-top: 0%;
+
+      width: 100%;
+    }
+    .card {
+      width: 40%;
+      .ticket {
+        @include ticketdesktop;
+      }
+    }
+  }
+}

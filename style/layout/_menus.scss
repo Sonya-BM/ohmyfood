@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&family=Shrikhand&display=swap"); /*partie mobile first*/
+
+.banner {
+  position: absolute;
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.menu {
+  background-color: $bg-explore;
+  border-radius: 30px 30px 0px 0px;
+  position: relative;
+  margin-top: 55%;
+  padding-top: 15px;
+  padding-left: 10px;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      @include title;
+    }
+    h2 {
+      @include hometitle;
+    }
+    .heart {
+      @include bgheart;
+    }
+    .heart:hover {
+      background: url("../images/restaurants/heart.svg") no-repeat;
+    }
+  }
+  .subtitle {
+    h2 {
+      @include menutitle;
+    }
+  }
+  .meals {
+    @include font;
+    margin-bottom: 40px;
+    margin-left: 1.5%;
+    animation: movement 1s forwards;
+    @keyframes movement {
+      0% {
+        transform: translateY(50px);
+      }
+      100% {
+        transform: translateY(10px);
+      }
+    }
+    .card {
+      box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 10%);
+      border-radius: 15px;
+      margin-left: 3px;
+      width: 95%;
+      background-color: white;
+      margin-bottom: 16px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 70px;
+      &:hover::before {
+        background: $color-tertiary;
+        position: absolute;
+        margin-right: 3%; /*15px*/
+        border-radius: 0px 15px 15px 0px;
+        height: 27px;
+        width: 10px;
+        white-space: nowrap; /* pas de passage à la ligne */
+        animation: bord 0.5s ease;
+        animation-fill-mode: both;
+        content: url();
+        right: 0%;
+        @keyframes bord {
+          from {
+            padding: -5px;
+            padding-bottom: 42px;
+          }
+          to {
+            padding: 22px;
+          }
+        }
+      }
+      .colorbord {
+        color: white;
+      }
+      &:hover {
+        .colorbord {
+          display: flex;
+          .verif {
+            display: flex;
+            margin: auto;
+            margin-right: 17px;
+           margin-left: 30px;
+            text-align: center;
+            color: white;
+            z-index: 3;
+            animation-name: turn;
+            animation-duration: 1s;
+            @keyframes turn {
+              to {
+                transform: rotate(0deg);
+              }
+              from {
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+      }
+      .mealscontent {
+      margin: 0%;
+        padding-left: 3%;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        h3 {
+          text-overflow: ellipsis;
+
+          overflow: hidden;
+        }
+        p {
+          text-overflow: ellipsis;
+
+          margin-top:-10px;
+          overflow: hidden;
+         }
+      }
+
+      span {
+        display: flex;
+        align-content: space-evenly;
+        float: right;
+        margin-top: 30px;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+.order {
+  display: flex;
+justify-content: center;
+  margin: auto;
+  background: linear-gradient(to bottom right,$color-secondary, $color-primary);
+border-radius: 50px;
+  border: none;
+  color: $font-color-btn;
+  font-family: $font-family-text;
+width: 200px;
+height: 50px;
+margin-bottom: 20px;
+padding-top: 16px;
+cursor: pointer;
+  &:hover {
+    background: linear-gradient(
+      to bottom right,
+      lighten($color-secondary, 5%),
+      lighten($color-primary, 5%)
+    );
+    box-shadow: 3px 3px 3px 3px rgba(67, 56, 56, 0.5);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    content: url("/images/restaurants/alafrancaise.jpg");
+    background: url("/images/restaurants/alafrancaise.jpg");
+    background-repeat: no-repeat;
+    max-height: 60%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    img {
+      display: none;
+    }
+  }
+  .menu {
+    margin-top: 40%;
+    .meals {
+      margin-left: 2.3%;
+      .card {
+        &:hover::before {
+          margin-right: 4.4%; /*15px*/
+        }
+      }
+    }
+  }
+
+}
+@media screen and (min-width: 992px) {
+  .banner {
+    max-height: 80%;
+  }
+  .menu {
+    margin-top: 35%;
+    .meals {
+      margin-left: 3%;
+    }
+  }
+}
