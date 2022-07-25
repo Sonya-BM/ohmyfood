@@ -2,6 +2,9 @@
 /*pris du fichier scss*/
 /*pris du fichier style.scss*/
 /*pris du fichier menus.scss*/
+/*animation-movement menus - starter*/
+/*animation-movement menus - dish*/
+/*animation-movement menus - dessert*/
 /*pris du fichier menus.scss - version mobile*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&family=Shrikhand&display=swap");
@@ -468,17 +471,153 @@ header .back {
   font-family: "Roboto", sans-serif;
   padding-bottom: 5px;
 }
-.menu .entree {
-  -webkit-animation: movement 2s;
-          animation: movement 2s;
+.menu .starterone {
+  -webkit-animation: movement 2.3s;
+          animation: movement 2.3s;
 }
-.menu .plat {
+@-webkit-keyframes movement {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes movement {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.menu .startertwo {
   -webkit-animation: movement 3s;
           animation: movement 3s;
 }
-.menu .dessert {
-  -webkit-animation: movement 3.5s;
-          animation: movement 3.5s;
+@keyframes movement {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.menu .starterthree {
+  -webkit-animation: movement 4s;
+          animation: movement 4s;
+}
+@keyframes movement {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.menu .dishone {
+  -webkit-animation: movement 2.3s;
+          animation: movement 2.3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@keyframes movement {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.menu .dishtwo {
+  -webkit-animation: movement 3s;
+          animation: movement 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@keyframes movement {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.menu .dishthree {
+  -webkit-animation: movement 4s;
+          animation: movement 4s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@keyframes movement {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.menu .dessertone {
+  -webkit-animation: movement 2.3s;
+          animation: movement 2.3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+@keyframes movement {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.menu .desserttwo {
+  -webkit-animation: movement 3s;
+          animation: movement 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+@keyframes movement {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.menu .dessertthree {
+  -webkit-animation: movement 4s;
+          animation: movement 4s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+@keyframes movement {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 .menu .meals {
   font-family: "Roboto", sans-serif;
@@ -496,26 +635,6 @@ header .back {
   overflow: hidden;
   text-overflow: ellipsis;
   height: 70px;
-}
-@-webkit-keyframes movement {
-  0% {
-    transform: translateY(40px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-@keyframes movement {
-  0% {
-    transform: translateY(40px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
 }
 .menu .meals .card:hover::before {
   background: #99e2d0;

@@ -39,33 +39,41 @@ padding-bottom: 20px;
       @include menutitle;
     }
   }
- .entree{
-  animation: movement 2s;
+ .starterone{
+  @include fadeinupone;
+ }
+ .startertwo{
+  @include fadeinuptwo;
+ }
+ .starterthree{
+  @include fadeinupthree;
 
  }
- .plat{
-  animation: movement 3s;
-  }
- .dessert{
-  animation: movement 3.5s;
-
+ .dishone{
+  @include dishfadeinupone;
+}
+.dishtwo{
+  @include dishfadeinuptwo;
+}
+.dishthree{
+  @include dishfadeinupthree;
+}
+ .dessertone{
+    @include dessertfadeinupone; 
  }
-  .meals {
+ .desserttwo{
+  @include dessertfadeinuptwo; 
+} 
+.dessertthree{
+  @include dessertfadeinupthree; 
+}
+ .meals {
     @include font;
     margin-bottom: 40px;
     margin-left: 1.5%;
  
     .card {
-      @keyframes movement {
-        0% {
-          transform: translateY(40px);
-        opacity: 0;
-        }
-        100% {
-          transform: translateY(0px);
-          opacity: 1;
-        }
-      }
+   
          box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 10%);
       border-radius: 15px;
       margin-left: 3px;

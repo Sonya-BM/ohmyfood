@@ -82,4 +82,160 @@
     font-family: $font-family-text;
     font-size: 13px;
   }
-    
+  /*animation-movement menus - starter*/
+
+  @mixin fadeinupone{
+    animation: movement 2.3s;
+    @keyframes movement {
+      from {
+        transform: translateY(10px);
+      opacity: 0;
+      }
+     
+      to {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+  }
+
+
+    @mixin fadeinuptwo {
+      animation: movement 3s;
+  @keyframes movement {
+   
+    from {
+      transform: translateY(20px);
+    opacity: 0;
+    }
+   
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  }
+
+  @mixin fadeinupthree{
+    animation: movement 4s;
+    @keyframes movement {
+      from {
+        transform: translateY(30px);
+      opacity: 0;
+      }
+     
+      to {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+  }
+
+  /*animation-movement menus - dish*/
+  @mixin dishfadeinupone{
+  animation: movement 2.3s;
+  animation-delay: 1s;
+
+  @keyframes movement {
+    from {
+      transform: translateY(10px);
+    opacity: 0;
+    }
+   
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+}
+
+
+  @mixin dishfadeinuptwo {
+    animation: movement 3s;
+    animation-delay: 1s;
+
+@keyframes movement {
+ 
+  from {
+    transform: translateY(20px);
+  opacity: 0;
+  }
+ 
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+}
+
+@mixin dishfadeinupthree{
+  animation: movement 4s;
+  animation-delay: 1s;
+  @keyframes movement {
+    from {
+      transform: translateY(30px);
+    opacity: 0;
+    }
+   
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+}
+
+
+  /*animation-movement menus - dessert*/
+  @mixin dessertfadeinupone{
+    animation: movement 2.3s;
+    animation-delay: 2s;
+  
+    @keyframes movement {
+      from {
+        transform: translateY(10px);
+      opacity: 0;
+      }
+     
+      to {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+  }
+  
+  
+    @mixin dessertfadeinuptwo {
+      animation: movement 3s;
+      animation-delay: 2s;
+  
+  @keyframes movement {
+   
+    from {
+      transform: translateY(20px);
+    opacity: 0;
+    }
+   
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  }
+  
+  @mixin dessertfadeinupthree{
+    animation: movement 4s;
+    animation-delay: 2s;
+    @keyframes movement {
+      from {
+        transform: translateY(30px);
+      opacity: 0;
+      }
+     
+      to {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+  }
+  
+  
