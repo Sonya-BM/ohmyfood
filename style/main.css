@@ -26,6 +26,10 @@ header img {
 header .back {
   margin-left: 17px;
   margin-right: -20px;
+  color: black;
+}
+header .back:hover {
+  color: #99e2d0;
 }
 
 /*

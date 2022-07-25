@@ -17,6 +17,10 @@ header {
     .back {
       margin-left: 17px;
       margin-right: -20px;
+      color: black;
+      &:hover{
+        color: $color-tertiary;
+      }
     }
   }
 /*
