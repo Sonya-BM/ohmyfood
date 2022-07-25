@@ -16,7 +16,7 @@
   margin-top: 55%;
   padding-top: 15px;
   padding-left: 10px;
-padding-bottom: 20px;
+  padding-bottom: 20px;
   div {
     display: flex;
     justify-content: space-between;
@@ -39,44 +39,51 @@ padding-bottom: 20px;
       @include menutitle;
     }
   }
- .starterone{
-  @include fadeinupone;
- }
- .startertwo{
-  @include fadeinuptwo;
- }
- .starterthree{
-  @include fadeinupthree;
- }
- .starterfour{
-  @include fadeinupfour;
- }
- .dishone{
-  @include dishfadeinupone;
-}
-.dishtwo{
-  @include dishfadeinuptwo;
-}
-.dishthree{
-  @include dishfadeinupthree;
-}
- .dessertone{
-    @include dessertfadeinupone; 
- }
- .desserttwo{
-  @include dessertfadeinuptwo; 
-} 
-.dessertthree{
-  @include dessertfadeinupthree; 
-}
- .meals {
+  /*animation-movement menus - starter ou entree*/
+
+  .starterone {
+    @include fadeinupone;
+  }
+  .startertwo {
+    @include fadeinuptwo;
+  }
+  .starterthree {
+    @include fadeinupthree;
+  }
+  .starterfour {
+    @include fadeinupfour;
+  }
+  /*animation-movement menus - dish ou plat*/
+
+  .dishone {
+    @include dishfadeinupone;
+  }
+  .dishtwo {
+    @include dishfadeinuptwo;
+  }
+  .dishthree {
+    @include dishfadeinupthree;
+  }
+  /*animation-movement menus - dessert*/
+
+  .dessertone {
+    @include dessertfadeinupone;
+  }
+  .desserttwo {
+    @include dessertfadeinuptwo;
+  }
+  .dessertthree {
+    @include dessertfadeinupthree;
+  }
+
+  /*cadre des menus*/
+  .meals {
     @include font;
     margin-bottom: 40px;
     margin-left: 1.5%;
- 
+    
     .card {
-   
-         box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 10%);
+      box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 10%);
       border-radius: 15px;
       margin-left: 3px;
       width: 95%;
@@ -84,8 +91,8 @@ padding-bottom: 20px;
       margin-bottom: 16px;
       overflow: hidden;
       text-overflow: ellipsis;
-      height: 70px;
-             &:hover::before {
+            height: 70px;
+      &:hover::before {
         background: $color-tertiary;
         position: absolute;
         margin-right: 3%; /*15px*/
@@ -106,9 +113,8 @@ padding-bottom: 20px;
             padding: 22px;
           }
         }
-   
       }
-      
+
       .colorbord {
         color: white;
       }
@@ -119,7 +125,7 @@ padding-bottom: 20px;
             display: flex;
             margin: auto;
             margin-right: 17px;
-           margin-left: 30px;
+            margin-left: 30px;
             text-align: center;
             color: white;
             z-index: 3;
@@ -133,14 +139,11 @@ padding-bottom: 20px;
                 transform: rotate(180deg);
               }
             }
-            
           }
-      
         }
-      
       }
       .mealscontent {
-      margin: 0%;
+        margin: 0%;
         padding-left: 3%;
         width: 100%;
         white-space: nowrap;
@@ -149,15 +152,14 @@ padding-bottom: 20px;
 
         h3 {
           text-overflow: ellipsis;
-
           overflow: hidden;
         }
         p {
           text-overflow: ellipsis;
 
-          margin-top:-10px;
+          margin-top: -10px;
           overflow: hidden;
-         }
+        }
       }
 
       span {
@@ -167,24 +169,27 @@ padding-bottom: 20px;
         margin-top: 30px;
         padding-left: 5px;
       }
-    
     }
   }
 }
 .order {
   display: flex;
-justify-content: center;
+  justify-content: center;
   margin: auto;
-  background: linear-gradient(to bottom right,$color-secondary, $color-primary);
-border-radius: 50px;
+  background: linear-gradient(
+    to bottom right,
+    $color-secondary,
+    $color-primary
+  );
+  border-radius: 50px;
   border: none;
   color: $font-color-btn;
   font-family: $font-family-text;
-width: 200px;
-height: 50px;
-margin-bottom: 20px;
-padding-top: 16px;
-cursor: pointer;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 20px;
+  padding-top: 16px;
+  cursor: pointer;
   &:hover {
     background: linear-gradient(
       to bottom right,
@@ -219,7 +224,6 @@ cursor: pointer;
       }
     }
   }
-
 }
 @media screen and (min-width: 992px) {
   .banner {

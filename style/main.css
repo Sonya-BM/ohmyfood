@@ -441,6 +441,10 @@ header .back:hover {
   padding-top: 15px;
   padding-left: 10px;
   padding-bottom: 20px;
+  /*animation-movement menus - starter ou entree*/
+  /*animation-movement menus - dish ou plat*/
+  /*animation-movement menus - dessert*/
+  /*cadre des menus*/
 }
 .menu div {
   display: flex;
