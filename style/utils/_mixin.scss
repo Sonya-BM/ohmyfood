@@ -130,11 +130,24 @@
       }
     }
   }
-
+  @mixin fadeinupfour{
+    animation: movement 4.5s;
+    @keyframes movement {
+      from {
+        transform: translateY(40px);
+      opacity: 0;
+      }
+     
+      to {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+  }
   /*animation-movement menus - dish*/
   @mixin dishfadeinupone{
   animation: movement 2.3s;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 
   @keyframes movement {
     from {
@@ -152,7 +165,7 @@
 
   @mixin dishfadeinuptwo {
     animation: movement 3s;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 
 @keyframes movement {
  
@@ -170,7 +183,7 @@
 
 @mixin dishfadeinupthree{
   animation: movement 4s;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
   @keyframes movement {
     from {
       transform: translateY(30px);
@@ -188,7 +201,7 @@
   /*animation-movement menus - dessert*/
   @mixin dessertfadeinupone{
     animation: movement 2.3s;
-    animation-delay: 2s;
+    animation-delay: 2.5s;
   
     @keyframes movement {
       from {
@@ -206,7 +219,7 @@
   
     @mixin dessertfadeinuptwo {
       animation: movement 3s;
-      animation-delay: 2s;
+      animation-delay: 2.5s;
   
   @keyframes movement {
    
@@ -224,7 +237,7 @@
   
   @mixin dessertfadeinupthree{
     animation: movement 4s;
-    animation-delay: 2s;
+    animation-delay: 2.5s;
     @keyframes movement {
       from {
         transform: translateY(30px);

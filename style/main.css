@@ -523,11 +523,25 @@ header .back {
     opacity: 1;
   }
 }
+.menu .starterfour {
+  -webkit-animation: movement 4.5s;
+          animation: movement 4.5s;
+}
+@keyframes movement {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 .menu .dishone {
   -webkit-animation: movement 2.3s;
           animation: movement 2.3s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 @keyframes movement {
   from {
@@ -542,8 +556,8 @@ header .back {
 .menu .dishtwo {
   -webkit-animation: movement 3s;
           animation: movement 3s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 @keyframes movement {
   from {
@@ -558,8 +572,8 @@ header .back {
 .menu .dishthree {
   -webkit-animation: movement 4s;
           animation: movement 4s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 @keyframes movement {
   from {
@@ -574,8 +588,8 @@ header .back {
 .menu .dessertone {
   -webkit-animation: movement 2.3s;
           animation: movement 2.3s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 @keyframes movement {
   from {
@@ -590,8 +604,8 @@ header .back {
 .menu .desserttwo {
   -webkit-animation: movement 3s;
           animation: movement 3s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 @keyframes movement {
   from {
@@ -606,8 +620,8 @@ header .back {
 .menu .dessertthree {
   -webkit-animation: movement 4s;
           animation: movement 4s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 @keyframes movement {
   from {
