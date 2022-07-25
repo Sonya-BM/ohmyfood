@@ -433,6 +433,7 @@ header .back {
   margin-top: 55%;
   padding-top: 15px;
   padding-left: 10px;
+  padding-bottom: 20px;
 }
 .menu div {
   display: flex;
@@ -467,29 +468,23 @@ header .back {
   font-family: "Roboto", sans-serif;
   padding-bottom: 5px;
 }
+.menu .entree {
+  -webkit-animation: movement 2s;
+          animation: movement 2s;
+}
+.menu .plat {
+  -webkit-animation: movement 3s;
+          animation: movement 3s;
+}
+.menu .dessert {
+  -webkit-animation: movement 3.5s;
+          animation: movement 3.5s;
+}
 .menu .meals {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   margin-bottom: 40px;
   margin-left: 1.5%;
-  -webkit-animation: movement 1s forwards;
-          animation: movement 1s forwards;
-}
-@-webkit-keyframes movement {
-  0% {
-    transform: translateY(50px);
-  }
-  100% {
-    transform: translateY(10px);
-  }
-}
-@keyframes movement {
-  0% {
-    transform: translateY(50px);
-  }
-  100% {
-    transform: translateY(10px);
-  }
 }
 .menu .meals .card {
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
@@ -501,6 +496,26 @@ header .back {
   overflow: hidden;
   text-overflow: ellipsis;
   height: 70px;
+}
+@-webkit-keyframes movement {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes movement {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 .menu .meals .card:hover::before {
   background: #99e2d0;

@@ -16,7 +16,7 @@
   margin-top: 55%;
   padding-top: 15px;
   padding-left: 10px;
-
+padding-bottom: 20px;
   div {
     display: flex;
     justify-content: space-between;
@@ -39,21 +39,34 @@
       @include menutitle;
     }
   }
+ .entree{
+  animation: movement 2s;
+
+ }
+ .plat{
+  animation: movement 3s;
+  }
+ .dessert{
+  animation: movement 3.5s;
+
+ }
   .meals {
     @include font;
     margin-bottom: 40px;
     margin-left: 1.5%;
-    animation: movement 1s forwards;
-    @keyframes movement {
-      0% {
-        transform: translateY(50px);
-      }
-      100% {
-        transform: translateY(10px);
-      }
-    }
+ 
     .card {
-      box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 10%);
+      @keyframes movement {
+        0% {
+          transform: translateY(40px);
+        opacity: 0;
+        }
+        100% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+         box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 10%);
       border-radius: 15px;
       margin-left: 3px;
       width: 95%;
@@ -62,7 +75,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
       height: 70px;
-      &:hover::before {
+             &:hover::before {
         background: $color-tertiary;
         position: absolute;
         margin-right: 3%; /*15px*/
@@ -83,7 +96,9 @@
             padding: 22px;
           }
         }
+   
       }
+      
       .colorbord {
         color: white;
       }
@@ -108,8 +123,11 @@
                 transform: rotate(180deg);
               }
             }
+            
           }
+      
         }
+      
       }
       .mealscontent {
       margin: 0%;
@@ -139,6 +157,7 @@
         margin-top: 30px;
         padding-left: 5px;
       }
+    
     }
   }
 }
