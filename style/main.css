@@ -726,20 +726,19 @@ header .back {
 .menu .meals .card .mealscontent {
   margin: 0%;
   padding-left: 3%;
-  /*width: 100%;*/
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu .meals .card .mealscontent h3 {
-  width: 200px;
+  width: 180px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu .meals .card .mealscontent p {
   margin-top: -10px;
-  width: 200px;
+  width: 180px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -793,6 +792,19 @@ header .back {
   }
   .menu .meals .card:hover::before {
     margin-right: 4.4%; /*15px*/
+  }
+  .menu .meals .card .mealscontent {
+    margin: 0%;
+    padding-left: 3%;
+    width: 100%;
+  }
+  .menu .meals .card .mealscontent h3 {
+    width: 100%;
+    text-overflow: clip;
+  }
+  .menu .meals .card .mealscontent p {
+    width: 100%;
+    text-overflow: clip;
   }
 }
 @media screen and (min-width: 992px) {

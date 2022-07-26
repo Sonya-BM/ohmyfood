@@ -99,7 +99,7 @@
         border-radius: 0px 15px 15px 0px;
         height: 27px;
         width: 10px;
-        white-space: nowrap; /* pas de passage à la ligne */
+         white-space: nowrap; /* pas de passage à la ligne */
         animation: bord 0.5s ease;
         animation-fill-mode: both;
         content: url();
@@ -145,19 +145,19 @@
       .mealscontent {
         margin: 0%;
         padding-left: 3%;
-        /*width: 100%;*/
+        width: 100%;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis;
 
         h3 {
-          width: 200px;
+          width: 180px;
           white-space: nowrap;
           overflow: hidden;
-          text-overflow: ellipsis;        }
+          text-overflow: ellipsis;
+          }
         p {
           margin-top: -10px;
-          width: 200px;
+          width: 180px;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -222,6 +222,24 @@
         &:hover::before {
           margin-right: 4.4%; /*15px*/
         }
+        .mealscontent {
+          margin: 0%;
+          padding-left: 3%;
+          width: 100%;
+  
+          h3 {
+            width: 100%;
+
+            text-overflow:clip;
+
+            }
+          p {
+            width: 100%;
+
+            text-overflow:clip;
+          }
+        }
+  
       }
     }
   }
