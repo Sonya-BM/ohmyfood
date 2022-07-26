@@ -81,7 +81,7 @@
     @include font;
     margin-bottom: 40px;
     margin-left: 1.5%;
-    
+
     .card {
       box-shadow: 2px 2px 2px 0px rgb(0 0 0 / 10%);
       border-radius: 15px;
@@ -91,7 +91,7 @@
       margin-bottom: 16px;
       overflow: hidden;
       text-overflow: ellipsis;
-            height: 70px;
+      height: 70px;
       &:hover::before {
         background: $color-tertiary;
         position: absolute;
@@ -145,20 +145,22 @@
       .mealscontent {
         margin: 0%;
         padding-left: 3%;
-        width: 100%;
+        /*width: 100%;*/
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
 
         h3 {
-          text-overflow: ellipsis;
+          width: 200px;
+          white-space: nowrap;
           overflow: hidden;
-        }
+          text-overflow: ellipsis;        }
         p {
-          text-overflow: ellipsis;
-
           margin-top: -10px;
+          width: 200px;
+          white-space: nowrap;
           overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
 
@@ -167,7 +169,6 @@
         align-content: space-evenly;
         float: right;
         margin-top: 30px;
-        padding-left: 5px;
       }
     }
   }

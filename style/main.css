@@ -28,9 +28,6 @@ header .back {
   margin-right: -20px;
   color: black;
 }
-header .back:hover {
-  color: #99e2d0;
-}
 
 /*
 
@@ -729,26 +726,29 @@ header .back:hover {
 .menu .meals .card .mealscontent {
   margin: 0%;
   padding-left: 3%;
-  width: 100%;
+  /*width: 100%;*/
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu .meals .card .mealscontent h3 {
-  text-overflow: ellipsis;
+  width: 200px;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .meals .card .mealscontent p {
-  text-overflow: ellipsis;
   margin-top: -10px;
+  width: 200px;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .meals .card span {
   display: flex;
   align-content: space-evenly;
   float: right;
   margin-top: 30px;
-  padding-left: 5px;
 }
 
 .order {
