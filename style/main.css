@@ -549,10 +549,10 @@ header .back {
   }
 }
 .menu .dishone {
-  -webkit-animation: movement 4.5s;
-          animation: movement 4.5s;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  -webkit-animation: movement 1.5s backwards;
+          animation: movement 1.5s backwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 @keyframes movement {
   from {
@@ -565,10 +565,10 @@ header .back {
   }
 }
 .menu .dishtwo {
-  -webkit-animation: movement 3s backwards;
-          animation: movement 3s backwards;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  -webkit-animation: movement 1.5s backwards;
+          animation: movement 1.5s backwards; /*s= durée de l'animation*/
+  -webkit-animation-delay: 2.7s;
+          animation-delay: 2.7s; /*temps après lequel s'encloche l'animation */
 }
 @keyframes movement {
   0% {
@@ -581,10 +581,10 @@ header .back {
   }
 }
 .menu .dishthree {
-  -webkit-animation: movement 3s backwards;
-          animation: movement 3s backwards;
-  -webkit-animation-delay: 2.8s;
-          animation-delay: 2.8s;
+  -webkit-animation: movement 1.5s backwards;
+          animation: movement 1.5s backwards;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
 }
 @keyframes movement {
   0% {
@@ -597,42 +597,42 @@ header .back {
   }
 }
 .menu .dessertone {
-  -webkit-animation: movement 2.3s;
-          animation: movement 2.3s;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  -webkit-animation: movement 2.5s backwards;
+          animation: movement 2.5s backwards; /*s= durée de l'animation*/
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s; /*temps après lequel s'encloche l'animation */
 }
 @keyframes movement {
-  from {
-    transform: translateY(10px);
+  0% {
     opacity: 0;
+    transform: translateY(30px);
   }
-  to {
-    transform: translateY(0px);
+  100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 .menu .desserttwo {
-  -webkit-animation: movement 3s;
-          animation: movement 3s;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  -webkit-animation: movement 2.5s backwards;
+          animation: movement 2.5s backwards;
+  -webkit-animation-delay: 4.9s;
+          animation-delay: 4.9s;
 }
 @keyframes movement {
-  from {
-    transform: translateY(20px);
+  0% {
     opacity: 0;
+    transform: translateY(30px);
   }
-  to {
-    transform: translateY(0px);
+  100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 .menu .dessertthree {
-  -webkit-animation: movement 4s;
-          animation: movement 4s;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  -webkit-animation: movement 4s backwards;
+          animation: movement 4s backwards;
+  -webkit-animation-delay: 5.3s;
+          animation-delay: 5.3s;
 }
 @keyframes movement {
   from {

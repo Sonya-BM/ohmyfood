@@ -155,8 +155,8 @@ animation-delay: 0.5s;
   }
   /*animation-movement menus - dish*/
   @mixin dishfadeinupone{
-      animation: movement 4.5s;
-      animation-delay: 2.5s;
+    animation: movement 1.5s backwards;
+    animation-delay:2s;
     @keyframes movement {
       from {
         transform: translateY(40px);
@@ -173,37 +173,37 @@ animation-delay: 0.5s;
 
 
   @mixin dishfadeinuptwo {
-    animation: movement 3s backwards;
-  animation-delay: 2.5s;
-  @keyframes movement {
-0%{
-  opacity: 0;
-  transform: translateY(30px);
- 
-}
-100%{
-  opacity: 1;
-  transform: translateY(0);
- 
-}
-  }
+    animation: movement 1.5s backwards; /*s= durée de l'animation*/
+    animation-delay: 2.7s; /*temps après lequel s'encloche l'animation */
+          @keyframes movement {
+    0%{
+      opacity: 0;
+      transform: translateY(30px);
+     
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+     
+    }
+      }
   }
 
 @mixin dishfadeinupthree{
-  animation: movement 3s backwards;
-  animation-delay: 2.8s;
-  @keyframes movement {
-0%{
-  opacity: 0;
-  transform: translateY(30px);
- 
-}
-100%{
-  opacity: 1;
-  transform: translateY(0);
- 
-}
-  }
+  animation: movement 1.5s backwards;
+  animation-delay: 3.5s;
+     @keyframes movement {
+ 0%{
+   opacity: 0;
+   transform: translateY(30px);
+  
+ }
+ 100%{
+   opacity: 1;
+   transform: translateY(0);
+  
+ }
+   }
  
 }
 
@@ -211,44 +211,43 @@ animation-delay: 0.5s;
   /*animation-movement menus - dessert*/
 
   @mixin dessertfadeinupone{
-    animation: movement 2.3s;
-    animation-delay: 2.5s;
-  
-    @keyframes movement {
-      from {
-        transform: translateY(10px);
+    animation: movement 2.5s backwards; /*s= durée de l'animation*/
+    animation-delay: 4s; /*temps après lequel s'encloche l'animation */
+          @keyframes movement {
+    0%{
       opacity: 0;
-      }
+      transform: translateY(30px);
      
-      to {
-        transform: translateY(0px);
-        opacity: 1;
-      }
     }
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+     
+    }
+      }
   }
   
   
     @mixin dessertfadeinuptwo {
-      animation: movement 3s;
-      animation-delay: 2.5s;
-  
-  @keyframes movement {
-   
-    from {
-      transform: translateY(20px);
-    opacity: 0;
-    }
-   
-    to {
-      transform: translateY(0px);
-      opacity: 1;
-    }
-  }
+      animation: movement 2.5s backwards;
+      animation-delay: 4.9s;
+         @keyframes movement {
+     0%{
+       opacity: 0;
+       transform: translateY(30px);
+      
+     }
+     100%{
+       opacity: 1;
+       transform: translateY(0);
+      
+     }
+       }
   }
   
   @mixin dessertfadeinupthree{
-    animation: movement 4s;
-    animation-delay: 2.5s;
+    animation: movement 4s backwards;
+    animation-delay: 5.3s;
     @keyframes movement {
       from {
         transform: translateY(30px);
