@@ -86,8 +86,8 @@
 
   @mixin fadeinupone{
 
-    animation: movement 2s;
-animation-delay: 1s;
+    animation: movement 1.5s;
+
     @keyframes movement {
       from {
         transform: translateY(40px);
@@ -104,41 +104,41 @@ animation-delay: 1s;
 
 
     @mixin fadeinuptwo {
-      animation: movement 2.3s;
-animation-delay: 1.2s;
+      animation: movement 1.5s backwards;
+animation-delay: 0.5s;
       @keyframes movement {
-        from {
-          transform: translateY(40px);
-        opacity: 0;
-        }
-       
-        to {
-          transform: translateY(0px);
-          opacity: 1;
-        }
-      }
+0%{
+  opacity: 0;
+  transform: translateY(30px);
+ 
+}
+100%{
+  opacity: 1;
+  transform: translateY(0);
+ 
+}
+  }
   }
 
   @mixin fadeinupthree{
-    animation: movement 2.7s ;
-    animation-delay: 1.4s;
-
+    animation: movement 1.5s backwards;
+ animation-delay:1s ;
     @keyframes movement {
-  0%{
-    opacity: 0;
-    transform: translateY(30px);
-   
+0%{
+  opacity: 0;
+  transform: translateY(30px);
+ 
+}
+100%{
+  opacity: 1;
+  transform: translateY(0);
+ 
+}
   }
-  100%{
-    opacity: 1;
-    transform: translateY(0);
-   
-  }
-    }
   }
   @mixin fadeinupfour{
-    animation: movement 3s;
-    animation-delay: 1.6s;
+    animation: movement 1.5s  backwards;
+    animation-delay:1.6s ;
 
     @keyframes movement {
   0%{
@@ -156,6 +156,7 @@ animation-delay: 1.2s;
   /*animation-movement menus - dish*/
   @mixin dishfadeinupone{
       animation: movement 4.5s;
+      animation-delay: 2.5s;
     @keyframes movement {
       from {
         transform: translateY(40px);
@@ -172,25 +173,25 @@ animation-delay: 1.2s;
 
 
   @mixin dishfadeinuptwo {
-    animation: movement 3s both;
-    animation-delay: 1.3s;
-    @keyframes movement {
-  0%{
-    opacity: 0;
-    transform: translateY(30px);
-   
+    animation: movement 3s backwards;
+  animation-delay: 2.5s;
+  @keyframes movement {
+0%{
+  opacity: 0;
+  transform: translateY(30px);
+ 
+}
+100%{
+  opacity: 1;
+  transform: translateY(0);
+ 
+}
   }
-  100%{
-    opacity: 1;
-    transform: translateY(0);
-   
-  }
-    }
   }
 
 @mixin dishfadeinupthree{
-  animation: movement 3s both;
-  animation-delay: 2.5s;
+  animation: movement 3s backwards;
+  animation-delay: 2.8s;
   @keyframes movement {
 0%{
   opacity: 0;
