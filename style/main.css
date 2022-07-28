@@ -477,12 +477,14 @@ header .back {
   padding-bottom: 5px;
 }
 .menu .starterone {
-  -webkit-animation: movement 2.3s;
-          animation: movement 2.3s;
+  -webkit-animation: movement 2s;
+          animation: movement 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 @-webkit-keyframes movement {
   from {
-    transform: translateY(10px);
+    transform: translateY(40px);
     opacity: 0;
   }
   to {
@@ -492,7 +494,7 @@ header .back {
 }
 @keyframes movement {
   from {
-    transform: translateY(10px);
+    transform: translateY(40px);
     opacity: 0;
   }
   to {
@@ -501,12 +503,14 @@ header .back {
   }
 }
 .menu .startertwo {
-  -webkit-animation: movement 3s;
-          animation: movement 3s;
+  -webkit-animation: movement 2.3s;
+          animation: movement 2.3s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 @keyframes movement {
   from {
-    transform: translateY(20px);
+    transform: translateY(40px);
     opacity: 0;
   }
   to {
@@ -515,20 +519,38 @@ header .back {
   }
 }
 .menu .starterthree {
-  -webkit-animation: movement 4s;
-          animation: movement 4s;
+  -webkit-animation: movement 2.7s;
+          animation: movement 2.7s;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
 }
 @keyframes movement {
-  from {
-    transform: translateY(30px);
+  0% {
     opacity: 0;
+    transform: translateY(30px);
   }
-  to {
-    transform: translateY(0px);
+  100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 .menu .starterfour {
+  -webkit-animation: movement 3s;
+          animation: movement 3s;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+@keyframes movement {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menu .dishone {
   -webkit-animation: movement 4.5s;
           animation: movement 4.5s;
 }
@@ -542,52 +564,36 @@ header .back {
     opacity: 1;
   }
 }
-.menu .dishone {
-  -webkit-animation: movement 2.3s;
-          animation: movement 2.3s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-@keyframes movement {
-  from {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
 .menu .dishtwo {
-  -webkit-animation: movement 3s;
-          animation: movement 3s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation: movement 3s both;
+          animation: movement 3s both;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
 }
 @keyframes movement {
-  from {
-    transform: translateY(20px);
+  0% {
     opacity: 0;
+    transform: translateY(30px);
   }
-  to {
-    transform: translateY(0px);
+  100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 .menu .dishthree {
-  -webkit-animation: movement 4s;
-          animation: movement 4s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation: movement 3s both;
+          animation: movement 3s both;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 @keyframes movement {
-  from {
-    transform: translateY(30px);
+  0% {
     opacity: 0;
+    transform: translateY(30px);
   }
-  to {
-    transform: translateY(0px);
+  100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 .menu .dessertone {
