@@ -658,7 +658,6 @@ header .back {
   background-color: white;
   margin-bottom: 16px;
   overflow: hidden;
-  text-overflow: ellipsis;
   height: 70px;
 }
 .menu .meals .card:hover::before {
@@ -675,6 +674,10 @@ header .back {
           animation-fill-mode: both;
   content: url();
   right: 0%;
+}
+.menu .meals .card:hover::before .mealscontent {
+  width: 75%;
+  margin-right: 10px;
 }
 @-webkit-keyframes bord {
   from {
@@ -730,21 +733,24 @@ header .back {
   }
 }
 .menu .meals .card .mealscontent {
-  margin: 0%;
+  display: flex;
   padding-left: 3%;
   width: 100%;
-  white-space: nowrap;
   overflow: hidden;
 }
 .menu .meals .card .mealscontent h3 {
-  width: 180px;
+  margin: 0%;
+  width: 100%;
+  height: 30%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu .meals .card .mealscontent p {
-  margin-top: -10px;
-  width: 180px;
+  margin-top: 40px;
+  margin-left: -300px;
+  float: left;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -810,7 +816,6 @@ header .back {
   }
   .menu .meals .card .mealscontent p {
     width: 100%;
-    text-overflow: clip;
   }
 }
 @media screen and (min-width: 992px) {
