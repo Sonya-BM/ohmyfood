@@ -1,0 +1,259 @@
+/*police pour le texte*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&family=Shrikhand&display=swap"); /*partie mobile first*/
+header {
+  padding-top: 5%;
+  padding-bottom: 4%;
+}
+header img {
+  display: flex;
+  margin: auto;
+  width: 48%;
+}
+
+.city {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(236, 236, 236);
+  padding: 4%;
+  box-shadow: 0 10px 10px -11px rgba(0, 0, 0, 0.35) inset;
+}
+.city i {
+  display: inline-flex;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 1%;
+}
+.city input {
+  border: none;
+  text-align: center;
+  background-color: rgb(236, 236, 236);
+  width: 68%;
+}
+.city input::-moz-placeholder {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-align: start;
+  padding-left: 9%;
+}
+.city input::placeholder {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-align: start;
+  padding-left: 9%;
+}
+
+.explore {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(247, 247, 247);
+  padding-bottom: 13%;
+}
+.explore h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  width: 80%;
+  margin: auto;
+  margin-top: 6%;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-weight: 900;
+}
+.explore p {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+.explore button {
+  margin: auto;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 5%;
+  margin-top: 4%;
+}
+.explore button:hover {
+  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
+  box-shadow: 3px 3px 3px 3px rgba(67, 56, 56, 0.5);
+}
+
+.functioning {
+  font-family: "Roboto", sans-serif;
+}
+.functioning h1 {
+  font-size: 25px;
+  margin-top: 10%;
+  margin-left: 5%;
+  font-family: "Roboto", sans-serif;
+}
+.functioning .choice {
+  box-shadow: 4px 5px rgba(125, 124, 124, 0.1);
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  margin-left: 11%;
+  margin-bottom: 6%;
+  max-width: 80%;
+}
+.functioning .choice:hover {
+  background-color: #f8f3ff;
+}
+.functioning .choice p {
+  float: left;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 30px;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 7%;
+  margin-left: -3%;
+  font-size: small;
+}
+.functioning .choice .container {
+  padding: 7%;
+}
+.functioning .choice i {
+  margin-right: 5%;
+  color: grey;
+}
+.functioning .choice i:hover {
+  color: #9356DC;
+}
+.functioning .choice span {
+  display: inline-flex;
+  color: black;
+  font-weight: bold;
+}
+.functioning .choice a {
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/*partie restaurants*/
+.restaurants {
+  flex-wrap: wrap;
+}
+.restaurants h1 {
+  font-size: 25px;
+  margin-top: 10%;
+  margin-left: 5%;
+  font-family: "Roboto", sans-serif;
+}
+.restaurants .card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.restaurants .card img {
+  display: flex;
+  justify-content: space-evenly;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100px;
+  border-radius: 20px 20px 0px 0px;
+}
+.restaurants .card .ticket {
+  background-color: #99E2D0;
+  color: #0b8768;
+  padding: 2%;
+  font-size: small;
+  float: right;
+  margin-left: 60%;
+  font-weight: bold;
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+}
+.restaurants .containerrestaurant {
+  margin-left: 5%;
+  margin-top: 3%;
+  height: 80px;
+  font-family: "Roboto", sans-serif;
+  float: left;
+  text-align: justify;
+  line-height: 5px;
+  font-size: 14px;
+}
+.restaurants .containerrestaurant h3 {
+  font-weight: bold;
+}
+.restaurants .containerrestaurant a {
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+.restaurants .containerrestaurant .heart {
+  display: block;
+  position: absolute;
+  margin-left: 65%;
+  font-size: 20px;
+  margin-top: -11%;
+}
+
+/*.restaurants{
+    h1{
+    @include hometitle;
+  }
+
+
+  .card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    border-radius: 20px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    .ticket{
+    @include ticket;
+    }
+    img {
+      display: flex;
+      object-fit: contain;
+      width: 100%;
+      border-radius: 20px 20px 0px 0px;
+    }
+  }
+  .container{
+    font-family: $font-family-text;
+    float: left;
+    text-align: justify;
+    line-height: 5px;
+  margin-left: -45%;
+  font-size: 14px;
+  h3{
+    font-weight: bold;
+
+  }
+     a{
+      @include link;
+
+   }
+
+  }
+  .heart{
+float: right;    font-size: 23px;
+  }
+
+
+}*/
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3N0eWxlL3N0eWxlLnNjc3MiLCIuLi9zdHlsZS9zdHlsZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUUsdUJBQUE7QUFDVSwySUFBQTtBQUNBLDRKQUFBLEVBQUEsc0JBQUE7QUFDWjtFQUNJLGVBQUE7RUFDQSxrQkFBQTtBQ0NKO0FEQVE7RUFDQSxhQUFBO0VBQ0EsWUFBQTtFQUNBLFVBQUE7QUNFUjs7QURPQTtFQUNJLGFBQUE7RUFDQSx1QkFBQTtFQUNBLG9DQUFBO0VBQ0YsV0FBQTtFQUNELHVEQUFBO0FDSkQ7QURLQTtFQUNBLG9CQUFBO0VBQ0EsdUJBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7QUNIQTtBREtBO0VBQ0ksWUFBQTtFQUNBLGtCQUFBO0VBQ0Esb0NBQUE7RUFDQSxVQUFBO0FDSEo7QURLSTtFQXRCQSxhQUFBO0VBQ0EsaUNBQUE7RUFDQSxZQUFBO0VBc0JBLGlCQUFBO0VBQ0EsZ0JBQUE7QUNESjtBREZJO0VBdEJBLGFBQUE7RUFDQSxpQ0FBQTtFQUNBLFlBQUE7RUFzQkEsaUJBQUE7RUFDQSxnQkFBQTtBQ0RKOztBRGdCQTtFQUNJLGFBQUE7RUFDQSx1QkFBQTtFQUNELHNCQUFBO0VBQ0Esa0JBQUE7RUFDQSxvQ0FSUztFQVNULG1CQUFBO0FDYkg7QURjRztFQUNDLGFBQUE7RUFDQSx1QkFBQTtFQUNKLGVBQUE7RUFDQSxVQUFBO0VBQ0EsWUFBQTtFQUNBLGNBQUE7RUFyREksYUFBQTtFQUNBLGlDQUFBO0VBQ0EsWUFBQTtFQXFESixnQkFBQTtBQ1ZBO0FEWUU7RUFDRSxhQUFBO0VBQ0EsdUJBQUE7RUFDSixlQUFBO0VBQ0EsZ0JBQUE7RUE3REksYUFBQTtFQUNBLGlDQUFBO0VBQ0EsWUFBQTtBQ29ESjtBRFdFO0VBQ0UsWUFBQTtFQUNKLDhEQUFBO0VBQ0EsbUJBQUE7RUFDQSxZQUFBO0VBQ0EsWUFsQ2dCO0VBbUNoQixpQ0FqQ21CO0VBa0NuQixXQUFBO0VBQ0EsY0FBQTtBQ1RBO0FEV0E7RUFDRSw4REFBQTtFQUNBLGlEQUFBO0FDVEY7O0FEaUNBO0VBQ0UsaUNBaEVpQjtBQ2tDbkI7QURnQ0U7RUFUQSxlQUFBO0VBQ0EsZUFBQTtFQUNBLGVBQUE7RUFDQSxpQ0E1RGlCO0FDd0NuQjtBRDZCQTtFQUNFLDRDQUFBO0VBQ0EseUJBdkJTO0VBeUJULG1CQUFBO0VBQ0EsZ0JBQUE7RUFDQSxpQkFBQTtFQUNBLGNBQUE7QUM1QkY7QUQ2QkU7RUFDRSx5QkEvQmE7QUNJakI7QUQ2QkE7RUFDRSxXQUFBO0VBQ0EseUJBdkZhO0VBd0ZiLFlBQUE7RUFDQSxtQkFBQTtFQUNBLFdBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsY0FBQTtFQUNBLGdCQUFBO0VBQ0EsZ0JBQUE7QUMzQkY7QUQ2QkE7RUFDRSxXQUFBO0FDM0JGO0FEOEJBO0VBQ0UsZ0JBQUE7RUFDRixXQUFBO0FDNUJBO0FENkJBO0VBQ0UsY0F6R2E7QUM4RWY7QUQ4QkE7RUFDQSxvQkFBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtBQzVCQTtBRDhCQTtFQXhERSxZQUFBO0VBQ0EscUJBQUE7RUFDQSxpQ0F0RGlCO0FDbUZuQjs7QURnQ0EscUJBQUE7QUFhQTtFQUNDLGVBQUE7QUN6Q0Q7QUQwQ0M7RUF6RUMsZUFBQTtFQUNBLGVBQUE7RUFDQSxlQUFBO0VBQ0EsaUNBNURpQjtBQzhGbkI7QUR5Q0E7RUFDRSxhQUFBO0VBRUEsZUFBQTtFQUNBLFVBQUE7RUFDQSxZQUFBO0VBQ0YsWUFBQTtFQUNFLG1CQUFBO0VBQ0EsMENBQUE7QUN4Q0Y7QUR5Q0U7RUFDRSxhQUFBO0VBQ0EsNkJBQUE7RUFDQSxvQkFBQTtLQUFBLGlCQUFBO0VBQ0EsV0FBQTtFQUNBLGFBQUE7RUFDQSxnQ0FBQTtBQ3ZDSjtBRHlDRTtFQW5DQyx5QkF4SGE7RUF5SGQsY0FBQTtFQUNDLFdBQUE7RUFDRCxnQkFBQTtFQUNBLFlBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQ0E3SGlCO0FDMEhuQjtBRG9DQTtFQUNFLGVBQUE7RUFDQSxjQUFBO0VBQ0EsWUFBQTtFQUNBLGlDQWxLaUI7RUFtS2pCLFdBQUE7RUFDQSxtQkFBQTtFQUNBLGdCQUFBO0VBQ0YsZUFBQTtBQ2xDQTtBRG1DRTtFQUNFLGlCQUFBO0FDakNKO0FEbUNLO0VBdEhILFlBQUE7RUFDQSxxQkFBQTtFQUNBLGlDQXREaUI7QUM0SW5CO0FEa0NHO0VBQ0MsY0FBQTtFQUNBLGtCQUFBO0VBQ0gsZ0JBQUE7RUFDRSxlQUFBO0VBQ0MsZ0JBQUE7QUNoQ0o7O0FEeUNBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztFQUFBIiwiZmlsZSI6InN0eWxlLm1pbi5jc3MifQ== */
