@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "sass": "sass --watch ./style/main.scss:./style/main.css",
+    "sass": "sass --watch ./style/main.scss:./style/main.css",
     "build": "postcss style/style.css -u autoprefixer -o .build/style.min.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Sonya-BM/ohmyfood#readme",
   "dependencies": {
-    "animate.css": "^4.1.1",
+    "gitignore": "^0.7.0",
     "sass": "^1.53.0"
   },
   "devDependencies": {
