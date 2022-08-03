@@ -796,8 +796,8 @@ header .back {
 
 @media screen and (min-width: 768px) {
   .banner {
-    content: url("/images/restaurants/alafrancaise.jpg");
-    background: url("/images/restaurants/alafrancaise.jpg");
+    content: url("./images/restaurants/alafrancaise.jpg");
+    background: url("./images/restaurants/alafrancaise.jpg");
     background-repeat: no-repeat;
     max-height: 60%;
     width: 100%;
