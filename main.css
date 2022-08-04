@@ -827,7 +827,7 @@ header .back {
 }
 @media screen and (min-width: 992px) {
   .banner img {
-    height: 15%;
+    height: 450px;
   }
   .menu {
     margin-top: 35%;
