@@ -339,7 +339,7 @@ header .back {
   margin-top: 20px;
 }
 .restaurants .containerrestaurant .heart:hover {
-  background: url("../images/restaurants/heart.svg") no-repeat;
+  background: url("./images/restaurants/heart.svg") no-repeat;
 }
 
 @media screen and (min-width: 768px) {
