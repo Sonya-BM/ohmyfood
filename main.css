@@ -802,9 +802,6 @@ header .back {
        object-fit: cover;
     position: absolute;
   }
-  .banner img {
-    display: none;
-  }
   .menu {
     margin-top: 40%;
   }
