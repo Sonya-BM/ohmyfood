@@ -380,6 +380,12 @@ header .back {
     padding: 2.5%;
     font-size: 25px;
   }
+  .functioning {
+    margin-bottom: 2%;
+  }
+  .functioning h1 {
+    margin-top: 4%;
+  }
   .functioning .choice {
     display: inline-flex;
     width: 35%;
@@ -396,6 +402,9 @@ header .back {
   }
   .functioning .choice .container i {
     margin-left: 5%;
+  }
+  .functioning .choice .container span {
+    font-size: 15px;
   }
   /*restaurants*/
   .restaurants {

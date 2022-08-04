@@ -220,6 +220,10 @@ height: 150px;
   }
 
   .functioning {
+    margin-bottom: 2%;
+h1{
+  margin-top: 4%;
+}
     .choice {
       display: inline-flex;
       width: 35%;
@@ -229,11 +233,15 @@ height: 150px;
         padding-top: 6px;
         padding-bottom: 5px;
       }
+    
       .container {
         width: 100%;
         padding: 0%;
         i {
           margin-left: 5%;
+        }
+        span{
+          font-size: 15px;
         }
       }
     }
