@@ -132,6 +132,24 @@ header .back {
   box-shadow: 3px 3px 3px 3px rgba(67, 56, 56, 0.5);
 }
 
+@media screen and (min-width: 992px) {
+  .explore {
+    height: 200px;
+  }
+  .explore h2 {
+    margin-top: 10%;
+  }
+  .explore button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    width: 50%;
+    padding: 5%;
+    padding-top: 3.5%;
+    font-size: 25px;
+  }
+}
 /*police pour le texte*/
 /*partie mobile first*/
 .functioning {
@@ -354,7 +372,9 @@ header .back {
     margin-bottom: 30px;
   }
   .functioning .choice p {
-    margin-top: 20px;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .functioning .choice .container {
     display: inline;
@@ -365,21 +385,6 @@ header .back {
   }
 }
 @media screen and (min-width: 992px) {
-  .explore {
-    height: 200px;
-  }
-  .explore h2 {
-    margin-top: 10%;
-  }
-  .explore button {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 100px;
-    width: 50%;
-    padding: 2.5%;
-    font-size: 25px;
-  }
   .functioning {
     margin-bottom: 2%;
   }
@@ -395,6 +400,7 @@ header .back {
     padding-left: 10px;
     padding-top: 6px;
     padding-bottom: 5px;
+    margin-left: -1%;
   }
   .functioning .choice .container {
     width: 100%;

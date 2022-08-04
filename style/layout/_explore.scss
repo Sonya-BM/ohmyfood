@@ -39,11 +39,30 @@
       color: $font-color-btn;
       font-family: $font-family-text;
       padding: 5%;
+     
       margin-top: 4%;
   
       &:hover {
         background: linear-gradient(to bottom right, lighten($color-secondary, 5%), lighten($color-primary, 5%));
         box-shadow: 3px 3px 3px 3px rgba(67, 56, 56, 0.5);
+      }
+    }
+  }
+  @media screen and(min-width:992px){
+    .explore {
+      height: 200px;
+      h2 {
+        margin-top: 10%;
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 100px;
+        width: 50%;
+        padding: 5%;
+        padding-top: 3.5%;
+        font-size: 25px;
       }
     }
   }
