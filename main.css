@@ -58,13 +58,13 @@ header .back {
 .city i {
   display: inline-flex;
   justify-content: center;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 .city input {
   border: none;
   text-align: center;
   background-color: rgb(236, 236, 236);
-  width: 68%;
+  width: 48%;
 }
 .city input::-moz-placeholder {
   font-family: "Roboto", sans-serif;
@@ -88,6 +88,19 @@ header .back {
   width: 100%;
 }
 
+@media screen and (min-width: 992px) {
+  .city i {
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 0%;
+  }
+  .city input {
+    border: none;
+    text-align: center;
+    background-color: rgb(236, 236, 236);
+    width: 68%;
+  }
+}
 /*pris du fichier style.scss - version mobile*/
 .explore {
   display: flex;
