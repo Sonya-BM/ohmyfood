@@ -796,11 +796,14 @@ header .back {
 
 @media screen and (min-width: 768px) {
   .banner {
-    max-height: 60%;
+    max-height: 30%;
     width: 100%;
+    position: absolute;
+  }
+  .banner img {
     -o-object-fit: cover;
        object-fit: cover;
-    position: absolute;
+    width: 100%;
   }
   .menu {
     margin-top: 40%;
