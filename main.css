@@ -826,6 +826,11 @@ header .back {
   }
 }
 @media screen and (min-width: 992px) {
+  .banner {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .banner img {
     height: 880px;
   }

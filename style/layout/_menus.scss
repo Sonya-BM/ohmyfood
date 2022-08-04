@@ -254,6 +254,8 @@ float:left;
 }
 @media screen and (min-width: 992px) {
  .banner{
+  width: 100%;
+  object-fit: cover;
 img{
   height: 880px;
 
