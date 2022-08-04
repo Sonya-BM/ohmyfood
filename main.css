@@ -385,10 +385,10 @@ header .back {
     width: 35%;
   }
   .functioning .choice p {
-    padding-right: 3%;
-    padding-left: 3%;
-    padding-top: 2%;
-    padding-bottom: 5%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    padding-top: 1%;
+    padding-bottom: 3%;
   }
   .functioning .choice .container {
     width: 100%;
