@@ -254,8 +254,11 @@ float:left;
 }
 @media screen and (min-width: 992px) {
  .banner{
+img{
   height: 15%;
- }
+
+}
+}
   .menu {
     margin-top: 35%;
     .meals {

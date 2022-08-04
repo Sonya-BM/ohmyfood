@@ -826,7 +826,7 @@ header .back {
   }
 }
 @media screen and (min-width: 992px) {
-  .banner {
+  .banner img {
     height: 15%;
   }
   .menu {
