@@ -145,7 +145,7 @@ header .back {
     height: 200px;
   }
   .explore h2 {
-    margin-top: 10%;
+    margin-top: 5%;
   }
   .explore button {
     display: flex;
@@ -403,11 +403,10 @@ header .back {
     width: 35%;
   }
   .functioning .choice p {
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 6px;
+    padding-right: 13px;
+    padding-left: 13px;
+    padding-top: 8px;
     padding-bottom: 5px;
-    margin-left: -1%;
   }
   .functioning .choice .container {
     width: 100%;
