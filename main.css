@@ -796,8 +796,6 @@ header .back {
 
 @media screen and (min-width: 768px) {
   .banner {
-    content: url("");
-    background-repeat: no-repeat;
     max-height: 60%;
     width: 100%;
     -o-object-fit: cover;
