@@ -132,6 +132,14 @@ header .back {
   box-shadow: 3px 3px 3px 3px rgba(67, 56, 56, 0.5);
 }
 
+@media screen and (min-width: 768px) {
+  .explore {
+    padding-bottom: 5%;
+  }
+  .explore button {
+    padding: 3%;
+  }
+}
 @media screen and (min-width: 992px) {
   .explore {
     height: 200px;
@@ -145,7 +153,6 @@ header .back {
     text-align: center;
     height: 100px;
     width: 50%;
-    padding: 5%;
     padding-top: 3.5%;
     font-size: 25px;
   }
