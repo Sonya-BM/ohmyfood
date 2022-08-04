@@ -335,7 +335,7 @@ header .back {
   width: 25px;
   margin-top: 10px;
   margin-right: 25px;
-  background: url("/images/restaurants/heartregular.svg") no-repeat;
+  background: url("./images/restaurants/heartregular.svg") no-repeat;
   margin-top: 20px;
 }
 .restaurants .containerrestaurant .heart:hover {
@@ -464,10 +464,10 @@ header .back {
   width: 25px;
   margin-top: 10px;
   margin-right: 25px;
-  background: url("/images/restaurants/heartregular.svg") no-repeat;
+  background: url("./images/restaurants/heartregular.svg") no-repeat;
 }
 .menu div .heart:hover {
-  background: url("../images/restaurants/heart.svg") no-repeat;
+  background: url("./images/restaurants/heart.svg") no-repeat;
 }
 .menu .subtitle h2 {
   border-bottom: solid #99e2d0;

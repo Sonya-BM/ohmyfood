@@ -24,7 +24,7 @@
     display: flex;
     transition-duration: 3s;
     width: 25px;
-    background: url("/images/restaurants/heartregular.svg") no-repeat;
+    background: url("./images/restaurants/heartregular.svg") no-repeat;
   }
   @mixin ticket {
     background-color: $color-tertiary;
@@ -68,7 +68,7 @@
     width: 25px;
     margin-top: 10px;
     margin-right: 25px;
-    background: url("/images/restaurants/heartregular.svg") no-repeat;
+    background: url("./images/restaurants/heartregular.svg") no-repeat;
   }
   
   @mixin menutitle {
