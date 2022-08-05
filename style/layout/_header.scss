@@ -1,11 +1,11 @@
 
-/*pris du fichier menus.scss - version mobile*/
+/*version mobile*/
 
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 5%; /*5%*/
+    padding-top: 5%; 
     padding-bottom: 4%; 
     img {
       font-size: medium;
@@ -23,7 +23,7 @@ header {
   }
 /*
 
-/*pris du ficheir style.scss - version tablette*/
+/*version tablette*/
   @media screen and (min-width: 768px) {
     header {
       img {
@@ -34,7 +34,7 @@ header {
 
 
 
-/*pris du ficheir style.scss - version desktop*/
+/*version desktop*/
 @media screen and (min-width: 992px) {
   header{
     height: 10px;
