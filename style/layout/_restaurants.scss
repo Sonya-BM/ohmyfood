@@ -16,7 +16,7 @@
     margin-left: 11%;
     margin-bottom: 6%;
     max-width: 80%;
-  
+
     p {
       float: left;
       background-color: $color-primary;
@@ -31,10 +31,10 @@
     }
     .container {
       padding: 7%;
-        }
-      .active{
-        color: $color-primary;
-      }
+    }
+    .active {
+      color: $color-primary;
+    }
     i {
       margin-right: 5%;
       color: grey;
@@ -51,11 +51,9 @@
       @include link;
     }
   }
-  .active{
-     background-color: $bg-functionning;
- 
+  .active {
+    background-color: $bg-functionning;
   }
- 
 }
 
 /*partie restaurants*/
@@ -70,46 +68,41 @@
   z-index: 100;
   background-color: white;
 
-  animation:loader 3s forwards;
+  animation: loader 3s forwards;
   @keyframes loader {
-    from{
-
-opacity: 0;
-
+    from {
+      opacity: 0;
     }
-    to{
-
-opacity: 100;  
-visibility:hidden;
+    to {
+      opacity: 100;
+      visibility: hidden;
+    }
   }
+  .roundloader {
+    text-align: center;
+    border: 16px solid $color-tertiary;
+    border-radius: 50%;
+    border-top: 20px solid $color-secondary;
+    border-bottom: 20px solid $color-primary;
+    animation: roundloader;
+    animation-duration: 3s;
+    opacity: 0;
+    margin: auto;
+    z-index: 100;
   }
-.roundloader{
-  text-align: center;
-  border: 16px solid $color-tertiary;
-  border-radius: 50%;
-  border-top: 20px solid $color-secondary;
-  border-bottom: 20px solid $color-primary;
-  animation: roundloader;
-  animation-duration: 3s;
-  opacity: 0;
-margin: auto;
-z-index: 100;
-
-}
 }
 @keyframes roundloader {
   to {
     transform: rotate(0deg);
-   opacity: 1;
-   width: 150px;
-   height: 150px;
+    opacity: 1;
+    width: 150px;
+    height: 150px;
   }
   from {
-   transform: rotate(360deg);
-   width: 150px;
-height: 150px;
+    transform: rotate(360deg);
+    width: 150px;
+    height: 150px;
     opacity: 0;
-    
   }
 }
 /*fin loader*/
@@ -201,17 +194,14 @@ height: 150px;
       }
     }
   }
-
 }
 
 @media screen and (min-width: 992px) {
- 
-
   .functioning {
     margin-bottom: 2%;
-h1{
-  margin-top: 4%;
-}
+    h1 {
+      margin-top: 4%;
+    }
     .choice {
       display: inline-flex;
       width: 35%;
@@ -221,14 +211,14 @@ h1{
         padding-top: 8px;
         padding-bottom: 5px;
       }
-    
+
       .container {
         width: 100%;
         padding: 0%;
         i {
           margin-left: 5%;
         }
-        span{
+        span {
           font-size: 15px;
         }
       }
