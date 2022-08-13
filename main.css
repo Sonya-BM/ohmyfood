@@ -5,7 +5,7 @@
 /*animation-movement menus - starter*/
 /*animation-movement menus - dish*/
 /*animation-movement menus - dessert*/
-/*pris du fichier menus.scss - version mobile*/
+/*version mobile*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,800;1,700&family=Roboto&family=Satisfy&display=swap");
@@ -14,7 +14,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 5%; /*5%*/
+  padding-top: 5%;
   padding-bottom: 4%;
 }
 header img {
@@ -29,12 +29,15 @@ header .back {
   color: black;
 }
 
+/*
 
+/*version tablette*/
 @media screen and (min-width: 768px) {
   header img {
     width: 30%;
   }
 }
+/*version desktop*/
 @media screen and (min-width: 992px) {
   header {
     height: 10px;
@@ -62,6 +65,7 @@ header .back {
   text-align: center;
   background-color: rgb(236, 236, 236);
   width: 48%;
+  margin-left: 10px;
 }
 .city input::-moz-placeholder {
   font-family: "Roboto", sans-serif;
@@ -224,8 +228,7 @@ header .back {
   background-color: #f8f3ff;
 }
 
-/*partie restaurants*/
-/*fin loader*/
+/*Création du spinner*/
 .loader {
   display: flex;
   position: fixed;
@@ -300,6 +303,7 @@ header .back {
   }
 }
 /*fin loader*/
+/*partie restaurants*/
 .restaurants {
   flex-wrap: wrap;
   background-color: rgb(239, 237, 237);
@@ -312,7 +316,14 @@ header .back {
   font-family: "Roboto", sans-serif;
   padding-top: 8%;
 }
-.restaurants .card {
+.restaurants .compangny {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+.restaurants .compangny .card {
   display: flex;
   background-color: white;
   flex-wrap: wrap;
@@ -323,7 +334,7 @@ header .back {
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.restaurants .card img {
+.restaurants .compangny .card img {
   display: flex;
   justify-content: space-evenly;
   -o-object-fit: cover;
@@ -332,7 +343,7 @@ header .back {
   height: 130px;
   border-radius: 20px 20px 0px 0px;
 }
-.restaurants .card .ticket {
+.restaurants .compangny .card .ticket {
   background-color: #99e2d0;
   color: #0b8768;
   padding: 2%;
@@ -347,14 +358,17 @@ header .back {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  line-height: 8px;
-  height: auto;
+  line-height: 2px;
 }
 .restaurants .containerrestaurant .namerestaurant {
   display: flex;
   justify-content: flex-start;
-  width: 80%;
+  flex-direction: column;
+  margin-right: auto;
+  flex-wrap: wrap;
   margin-left: 20px;
+  height: auto;
+  width: auto;
 }
 .restaurants .containerrestaurant h3 {
   font-weight: bold;
@@ -371,6 +385,7 @@ header .back {
   margin-right: 25px;
   background: url("./images/restaurants/heartregular.svg") no-repeat;
   margin-top: 20px;
+  cursor: pointer;
 }
 .restaurants .containerrestaurant .heart:hover {
   background: url("./images/restaurants/heart.svg") no-repeat;
@@ -427,20 +442,23 @@ header .back {
   .functioning .choice .container span {
     font-size: 15px;
   }
-  /*restaurants*/
   .restaurants {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
   }
   .restaurants h1 {
-    padding-top: 0%;
-    width: 100%;
+    padding-top: 3%;
+    width: 80%;
   }
-  .restaurants .card {
-    width: 40%;
+  .restaurants .compangny {
+    width: 50%;
   }
-  .restaurants .card .ticket {
+  .restaurants .compangny .card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .restaurants .compangny .card .ticket {
     background-color: #99e2d0;
     color: #0b8768;
     font-size: small;
@@ -469,7 +487,7 @@ header .back {
   padding-left: 10px;
   padding-bottom: 20px;
   /*animation-movement menus - starter ou entree*/
-  /*animation-movement menus - dish ou plat*/
+  /*animation-movement menus - dish / plat*/
   /*animation-movement menus - dessert*/
   /*cadre des menus*/
 }
@@ -698,13 +716,13 @@ header .back {
   margin-bottom: 16px;
   overflow: hidden;
   height: 70px;
-  /*debut color*/
+  /*animation icône tournant*/
   /*fin color*/
 }
 .menu .meals .card:hover::before {
-  background: #99e2d0;
+  background: #99e2d0; /*animation apparition couleur verte*/
   position: absolute;
-  margin-right: 3%; /*15px*/
+  margin-right: 3%;
   border-radius: 0px 15px 15px 0px;
   height: 27px;
   width: 10px;
@@ -746,12 +764,12 @@ header .back {
 }
 .menu .meals .card:hover .colorbord .verif {
   display: flex;
-  margin: auto;
-  margin-right: 17px;
-  margin-left: 30px;
   text-align: center;
   color: white;
   z-index: 3;
+  margin: auto;
+  margin-right: 17px;
+  margin-left: 23px;
   -webkit-animation-name: turn;
           animation-name: turn;
   -webkit-animation-duration: 1s;
@@ -762,6 +780,9 @@ header .back {
     transform: rotate(0deg);
   }
   from {
+    margin: auto;
+    margin-right: 3px;
+    margin-left: 3px;
     transform: rotate(180deg);
   }
 }
@@ -770,6 +791,9 @@ header .back {
     transform: rotate(0deg);
   }
   from {
+    margin: auto;
+    margin-right: 3px;
+    margin-left: 3px;
     transform: rotate(180deg);
   }
 }
@@ -802,6 +826,7 @@ header .back {
   align-content: space-evenly;
   float: right;
   margin-top: 30px;
+  margin-right: 6px;
 }
 
 .order {
@@ -825,14 +850,6 @@ header .back {
 }
 
 @media screen and (min-width: 768px) {
-  /* .banner {
-
-     max-height: 20%;
-     width: 100%;
-     object-fit: cover;
-     position: absolute;
-
-   }*/
   .menu {
     margin-top: 40%;
   }

@@ -3,7 +3,7 @@
   justify-content: center;
   background-color: rgb(236, 236, 236);
   padding: 4%;
-    box-shadow: 0 10px 10px -11px rgb(0 0 0 / 35%) inset;
+  box-shadow: 0 10px 10px -11px rgb(0 0 0 / 35%) inset;
   i {
     display: inline-flex;
     justify-content: center;
@@ -14,6 +14,7 @@
     text-align: center;
     background-color: rgb(236, 236, 236);
     width: 48%;
+    margin-left: 10px;
 
     &::placeholder {
       @include font;
@@ -23,9 +24,9 @@
     }
   }
 }
-@media screen and(min-width:992px){
+@media screen and(min-width:992px) {
   .city {
-   i {
+    i {
       display: inline-flex;
       justify-content: center;
       margin-left: 0%;
@@ -35,7 +36,6 @@
       text-align: center;
       background-color: rgb(236, 236, 236);
       width: 68%;
-  
     }
-}
+  }
 }

@@ -1,264 +1,238 @@
-
 /*pris du fichier scss*/
 
 @mixin font {
-    display: flex;
-    font-family: "Roboto", sans-serif;
-    color: black;
-  }
-  
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
 @mixin link {
-    color: black;
-    text-decoration: none;
-  
-    font-family: $font-family-text;
-  }
-  @mixin hometitle {
-    font-size: 25px;
-    margin-top: 8%;
-    margin-left: 5%;
-    font-family: $font-family-text;
-  }
+  color: black;
+  text-decoration: none;
 
-  @mixin bgheart {
-    display: flex;
-    transition-duration: 3s;
-    width: 25px;
-    background: url("./images/restaurants/heartregular.svg") no-repeat;
-  }
-  @mixin ticket {
-    background-color: $color-tertiary;
-    color: #0b8768;
-    padding: 2%;
-    font-size: small;
-    float: right;
-    margin-left: 55%;
-    font-weight: bold;
-    position: absolute;
-    font-family: $font-family-text;
-  }
-  @mixin ticketdesktop {
-    background-color: $color-tertiary;
-    color: #0b8768;
-    font-size: small;
-    padding: 1%;
-    margin-left:30%;
-    font-weight: bold;
-    font-family: $font-family-text;
-  }
-  /*pris du fichier style.scss*/
+  font-family: $font-family-text;
+}
+@mixin hometitle {
+  font-size: 25px;
+  margin-top: 8%;
+  margin-left: 5%;
+  font-family: $font-family-text;
+}
 
+@mixin bgheart {
+  display: flex;
+  transition-duration: 3s;
+  width: 25px;
+  background: url("./images/restaurants/heartregular.svg") no-repeat;
+}
+@mixin ticket {
+  background-color: $color-tertiary;
+  color: #0b8768;
+  padding: 2%;
+  font-size: small;
+  float: right;
+  margin-left: 55%;
+  font-weight: bold;
+  position: absolute;
+  font-family: $font-family-text;
+}
+@mixin ticketdesktop {
+  background-color: $color-tertiary;
+  color: #0b8768;
+  font-size: small;
+  padding: 1%;
+  margin-left: 30%;
+  font-weight: bold;
+  font-family: $font-family-text;
+}
+/*pris du fichier style.scss*/
 
-  /*pris du fichier menus.scss*/
+/*pris du fichier menus.scss*/
 
-  @mixin title {
-    display: flex;
-    margin-left: 10px;
-    font-size: 20px;
-    font-family: $font-family-title;
-  }
-  @mixin hometitle {
-    font-size: 25px;
-    margin-top: 8%;
-    margin-left: 5%;
-    font-family: $font-family-text;
-  }
-  @mixin bgheart {
-    transition-duration: 3s;
-    width: 25px;
-    margin-top: 10px;
-    margin-right: 25px;
-    background: url("./images/restaurants/heartregular.svg") no-repeat;
-  }
-  
-  @mixin menutitle {
-    border-bottom: solid $color-tertiary;
-    width: 40px;
-    font-size: 15px;
-    font-family: $font-family-text;
-    padding-bottom: 5px;
-  }
-  @mixin font {
-    font-family: $font-family-text;
-    font-size: 13px;
-  }
-  /*animation-movement menus - starter*/
+@mixin title {
+  display: flex;
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: $font-family-title;
+}
+@mixin hometitle {
+  font-size: 25px;
+  margin-top: 8%;
+  margin-left: 5%;
+  font-family: $font-family-text;
+}
+@mixin bgheart {
+  transition-duration: 3s;
+  width: 25px;
+  margin-top: 10px;
+  margin-right: 25px;
+  background: url("./images/restaurants/heartregular.svg") no-repeat;
+}
 
-  @mixin fadeinupone{
+@mixin menutitle {
+  border-bottom: solid $color-tertiary;
+  width: 40px;
+  font-size: 15px;
+  font-family: $font-family-text;
+  padding-bottom: 5px;
+}
+@mixin font {
+  font-family: $font-family-text;
+  font-size: 13px;
+}
+/*animation-movement menus - starter*/
 
-    animation: movement 1.5s;
+@mixin fadeinupone {
+  animation: movement 1.5s;
 
-    @keyframes movement {
-      from {
-        transform: translateY(40px);
+  @keyframes movement {
+    from {
+      transform: translateY(40px);
       opacity: 0;
-      }
-     
-      to {
-        transform: translateY(0px);
-        opacity: 1;
-      }
-    }
- 
-  }
-
-
-    @mixin fadeinuptwo {
-      animation: movement 1.5s backwards;
-animation-delay: 0.5s;
-      @keyframes movement {
-0%{
-  opacity: 0;
-  transform: translateY(30px);
- 
-}
-100%{
-  opacity: 1;
-  transform: translateY(0);
- 
-}
-  }
-  }
-
-  @mixin fadeinupthree{
-    animation: movement 1.5s backwards;
- animation-delay:1s ;
-    @keyframes movement {
-0%{
-  opacity: 0;
-  transform: translateY(30px);
- 
-}
-100%{
-  opacity: 1;
-  transform: translateY(0);
- 
-}
-  }
-  }
-  @mixin fadeinupfour{
-    animation: movement 1.5s  backwards;
-    animation-delay:1.6s ;
-
-    @keyframes movement {
-  0%{
-    opacity: 0;
-    transform: translateY(30px);
-   
-  }
-  100%{
-    opacity: 1;
-    transform: translateY(0);
-   
-  }
-    }
-  }
-  /*animation-movement menus - dish*/
-  @mixin dishfadeinupone{
-    animation: movement 1.5s backwards;
-    animation-delay:2s;
-    @keyframes movement {
-      from {
-        transform: translateY(40px);
-      opacity: 0;
-      }
-     
-      to {
-        transform: translateY(0px);
-        opacity: 1;
-      }
     }
 
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
 }
 
-
-  @mixin dishfadeinuptwo {
-    animation: movement 1.5s backwards; /*s= durée de l'animation*/
-    animation-delay: 2.7s; /*temps après lequel s'encloche l'animation */
-          @keyframes movement {
-    0%{
+@mixin fadeinuptwo {
+  animation: movement 1.5s backwards;
+  animation-delay: 0.5s;
+  @keyframes movement {
+    0% {
       opacity: 0;
       transform: translateY(30px);
-     
     }
-    100%{
+    100% {
       opacity: 1;
       transform: translateY(0);
-     
     }
-      }
   }
+}
 
-@mixin dishfadeinupthree{
+@mixin fadeinupthree {
+  animation: movement 1.5s backwards;
+  animation-delay: 1s;
+  @keyframes movement {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+@mixin fadeinupfour {
+  animation: movement 1.5s backwards;
+  animation-delay: 1.6s;
+
+  @keyframes movement {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+/*animation-movement menus - dish*/
+@mixin dishfadeinupone {
+  animation: movement 1.5s backwards;
+  animation-delay: 2s;
+  @keyframes movement {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin dishfadeinuptwo {
+  animation: movement 1.5s backwards; /*s= durée de l'animation*/
+  animation-delay: 2.7s; /*temps après lequel s'encloche l'animation */
+  @keyframes movement {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@mixin dishfadeinupthree {
   animation: movement 1.5s backwards;
   animation-delay: 3.5s;
-     @keyframes movement {
- 0%{
-   opacity: 0;
-   transform: translateY(30px);
-  
- }
- 100%{
-   opacity: 1;
-   transform: translateY(0);
-  
- }
-   }
- 
-}
-
-
-  /*animation-movement menus - dessert*/
-
-  @mixin dessertfadeinupone{
-    animation: movement 2.5s backwards; /*s= durée de l'animation*/
-    animation-delay: 4s; /*temps après lequel s'encloche l'animation */
-          @keyframes movement {
-    0%{
+  @keyframes movement {
+    0% {
       opacity: 0;
       transform: translateY(30px);
-     
     }
-    100%{
+    100% {
       opacity: 1;
       transform: translateY(0);
-     
     }
-      }
   }
-  
-  
-    @mixin dessertfadeinuptwo {
-      animation: movement 2.5s backwards;
-      animation-delay: 4.9s;
-         @keyframes movement {
-     0%{
-       opacity: 0;
-       transform: translateY(30px);
-      
-     }
-     100%{
-       opacity: 1;
-       transform: translateY(0);
-      
-     }
-       }
-  }
-  
-  @mixin dessertfadeinupthree{
-    animation: movement 4s backwards;
-    animation-delay: 5.3s;
-    @keyframes movement {
-      from {
-        transform: translateY(30px);
+}
+
+/*animation-movement menus - dessert*/
+
+@mixin dessertfadeinupone {
+  animation: movement 2.5s backwards; /*s= durée de l'animation*/
+  animation-delay: 4s; /*temps après lequel s'encloche l'animation */
+  @keyframes movement {
+    0% {
       opacity: 0;
-      }
-     
-      to {
-        transform: translateY(0px);
-        opacity: 1;
-      }
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
-  
-  
+}
+
+@mixin dessertfadeinuptwo {
+  animation: movement 2.5s backwards;
+  animation-delay: 4.9s;
+  @keyframes movement {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@mixin dessertfadeinupthree {
+  animation: movement 4s backwards;
+  animation-delay: 5.3s;
+  @keyframes movement {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+}

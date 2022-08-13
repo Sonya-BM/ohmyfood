@@ -1,78 +1,78 @@
-
 /*pris du fichier style.scss - version mobile*/
 .explore {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: $bg-explore;
+  padding-bottom: 13%;
+  h2 {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background-color: $bg-explore;
-    padding-bottom: 13%;
-    h2 {
-      display: flex;
-      justify-content: center;
-      font-size: 25px;
-      width: 80%;
-      margin: auto;
-      margin-top: 6%;
-      font-family: $font-family-text;
-      font-weight: 900;
-      
-    }
-    p {
-      display: flex;
-      justify-content: center;
-      margin-left: 5%;
-      margin-right: 5%;
-      font-family: $font-family-text;
-     font-size: 25px;
-    }
-    button {
-      margin: auto;
-      font-size: large;
+    font-size: 25px;
+    width: 80%;
+    margin: auto;
+    margin-top: 6%;
+    font-family: $font-family-text;
+    font-weight: 900;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: $font-family-text;
+    font-size: 25px;
+  }
+  button {
+    margin: auto;
+    font-size: large;
+    background: linear-gradient(
+      to bottom right,
+      $color-secondary,
+      $color-primary
+    );
+    border-radius: 25px;
+    border: none;
+    color: $font-color-btn;
+    font-family: $font-family-text;
+    padding: 5%;
+
+    margin-top: 4%;
+
+    &:hover {
       background: linear-gradient(
         to bottom right,
-        $color-secondary,
-        $color-primary
+        lighten($color-secondary, 5%),
+        lighten($color-primary, 5%)
       );
-      border-radius: 25px;
-      border: none;
-      color: $font-color-btn;
-      font-family: $font-family-text;
-      padding: 5%;
-     
-      margin-top: 4%;
-  
-      &:hover {
-        background: linear-gradient(to bottom right, lighten($color-secondary, 5%), lighten($color-primary, 5%));
-        box-shadow: 3px 3px 3px 3px rgba(67, 56, 56, 0.5);
-      }
+      box-shadow: 3px 3px 3px 3px rgba(67, 56, 56, 0.5);
     }
   }
-  @media  screen and(min-width:768px) {
-    .explore{
-      padding-bottom: 5%;
-button{
-  padding: 3%;
-
 }
+@media screen and(min-width:768px) {
+  .explore {
+    padding-bottom: 5%;
+    button {
+      padding: 3%;
     }
   }
-  @media screen and(min-width:992px){
-    .explore {
-      height: 200px;
+}
+@media screen and(min-width:992px) {
+  .explore {
+    height: 200px;
 
-      h2 {
-        margin-top: 5%;
-      }
-      button {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        height: 100px;
-        width: 50%;
-        padding-top: 35px;
-        font-size: 25px;
-      }
+    h2 {
+      margin-top: 5%;
+    }
+    button {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      height: 100px;
+      width: 50%;
+      padding-top: 35px;
+      font-size: 25px;
     }
   }
- 
+}
